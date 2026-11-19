@@ -4,7 +4,10 @@
 A single-page internal site ("Wilder Home Creator Content Strategy") for Wilder Home's creator and
 UGC content work.
 Hosted on Netlify and deployed from the GitHub repo `bdunn97/content-strategy-hub-wh`: every push
-to `main` redeploys the live site. Layout and styling mirror the Content Marketing Hub
+to `main` redeploys the live site.
+
+- Live site: https://content-strategy-hub-wh.netlify.app/
+- Local preview: http://localhost:4324 (`.claude/launch.json` "hub-preview", or `Start Hub.bat`) Layout and styling mirror the Content Marketing Hub
 (sticky tab bar, uppercase headings, red accent, 9:16 video carousels with a pop-up player).
 
 Tabs (in nav order; page ids in brackets):
