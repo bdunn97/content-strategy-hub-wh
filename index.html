@@ -77,11 +77,54 @@
   .vc-arrow{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--ink);color:var(--ink);transition:background .15s,color .15s}
   .vc-arrow:hover{background:var(--ink-strong);color:#fff}
   .vc-arrow:disabled{opacity:.25;pointer-events:none}
-  .vc-track{display:flex;gap:2px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  /* --card-w is one card's width (5.5 / 3.5 / 1.6 cards per view); cqw = % of the track's width */
+  .vc-track{--card-w:calc(18.1818cqw - 1.82px);container-type:inline-size;display:flex;align-items:flex-start;gap:2px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .vc-track::-webkit-scrollbar{display:none}
-  .vc-card{aspect-ratio:9/16;flex:0 0 calc(18.1818% - 1.82px);scroll-snap-align:start;background:var(--tray-2);position:relative;overflow:hidden;padding:0;text-align:left}
-  @media (max-width:1100px){.vc-card{flex-basis:calc(28.5714% - 1.71px)}}
-  @media (max-width:767px){.vc-card{flex-basis:calc(62.5% - 1.25px)}}
+  @media (max-width:1100px){.vc-track{--card-w:calc(28.5714cqw - 1.71px)}}
+  @media (max-width:767px){.vc-track{--card-w:calc(62.5cqw - 1.25px)}}
+  .vc-item{flex:0 0 var(--card-w);min-width:0;scroll-snap-align:start;display:flex;flex-direction:column}
+  .vc-item.is-open{flex-basis:min(100cqw,720px)}
+  .vc-card{aspect-ratio:9/16;width:var(--card-w);max-width:100%;background:var(--tray-2);position:relative;overflow:hidden;padding:0;text-align:left}
+
+  /* Shot list dropdown under each card */
+  .shot{border-top:1px solid var(--line);margin-top:10px}
+  .shot summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 2px;width:var(--card-w);max-width:100%;text-transform:uppercase;font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--ink-strong);transition:color .15s var(--ease)}
+  .shot summary::-webkit-details-marker{display:none}
+  .shot summary:hover,.shot[open] summary{color:var(--red)}
+  .shot summary:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+  .shot-count{color:var(--text-2);font-weight:600;letter-spacing:.02em;margin-left:auto;font-variant-numeric:tabular-nums}
+  .shot-chev{flex-shrink:0;transition:transform .2s var(--ease)}
+  .shot[open] .shot-chev{transform:rotate(180deg)}
+  .shot-body{padding:2px 2px 20px;display:flex;flex-direction:column;gap:14px}
+  .shot-label{display:block;text-transform:uppercase;color:var(--red);font-size:10.5px;font-weight:700;letter-spacing:.06em;margin-bottom:3px}
+  .shot-field p{font-size:13px;line-height:1.55;color:var(--ink);max-width:65ch}
+  .shot-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line)}
+  .shot-table{border-collapse:collapse;width:100%;min-width:600px;font-size:12.5px;line-height:1.45}
+  .shot-table th{text-align:left;text-transform:uppercase;font-size:10.5px;font-weight:700;letter-spacing:.05em;color:var(--text-2);background:#fafafa;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  .shot-table td{padding:8px 10px;border-bottom:1px solid #f0f0f0;vertical-align:top;color:var(--ink)}
+  .shot-table tr:last-child td{border-bottom:none}
+  .shot-table .c-n,.shot-table .c-time{white-space:nowrap;font-variant-numeric:tabular-nums}
+  .shot-table .c-n{width:36px;color:var(--text-2)}
+  .shot-table .c-type{white-space:nowrap;font-weight:600}
+
+  /* Creator tables (data from the local spreadsheets via sync-sheets.ps1) */
+  .ct-wrap{margin-top:32px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line)}
+  .ct{border-collapse:collapse;width:100%;min-width:900px;font-size:13px;line-height:1.5}
+  .ct th{text-align:left;text-transform:uppercase;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--text-2);background:#fafafa;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+  .ct td{padding:14px;border-bottom:1px solid #f0f0f0;vertical-align:top;color:var(--ink)}
+  .ct tbody tr:last-child td{border-bottom:none}
+  .ct tbody tr:hover td{background:#fafafa}
+  .ct-name{font-weight:700;color:var(--ink-strong);white-space:nowrap}
+  .ct-social{white-space:nowrap}
+  .ct-handle{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;transition:color .15s,text-decoration-color .15s}
+  .ct-handle:hover{color:var(--red);text-decoration-color:var(--red)}
+  .ct-count{display:block;font-weight:700;color:var(--ink-strong);font-variant-numeric:tabular-nums}
+  .ct-none{color:#c4c4c4}
+  .ct-chips{display:flex;flex-wrap:wrap;gap:4px;min-width:160px}
+  .ct-chip{background:#f2f2f2;color:var(--ink);font-size:11.5px;padding:2px 8px;white-space:nowrap}
+  .ct-notes{white-space:pre-line;color:var(--text-2);min-width:220px;max-width:360px}
+  .ct-notes a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;word-break:break-all}
+  .ct-notes a:hover{color:var(--red)}
   .vc-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease);pointer-events:none}
   .vc-card:hover .vc-img{transform:scale(1.04)}
   .vc-overlay{position:absolute;inset:0;background:linear-gradient(#0000 45%,#0a0a0a40 70%,#0a0a0ab8 100%);transition:background .3s var(--ease)}
@@ -157,8 +200,10 @@
 </main>
 
 <main class="page" id="potential-creators" hidden>
-  <div class="page-head"><div><span class="eyebrow">Creators</span><h1 class="h1">Potential Creators</h1></div></div>
-  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">Creators being considered for Wilder Home will go here.</p></div>
+  <div class="page-head"><div><span class="eyebrow">Creators</span><h1 class="h1">Potential Creators</h1><p class="page-sub" id="pc-summary"></p></div></div>
+  <div id="pc-body">
+    <div class="placeholder"><p class="placeholder-title">Loading creators…</p><p class="placeholder-note">From the Wilder Home Potential Influencers spreadsheet.</p></div>
+  </div>
 </main>
 
 <main class="page" id="creative-brief" hidden>
@@ -226,6 +271,8 @@
     name = name.replace(/\s*(sound\s+)?music only\s*/i, ' ').trim();
     return { title: name, musicOnly };
   }
+  // "Cozey 01" -> "cozey-01" (matches the ids in site-data/ad-shot-lists.json)
+  const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
   // ---- Render sections ----
   const total = data.reduce((n, b) => n + b.videos.length, 0);
@@ -253,13 +300,15 @@
         <div class="vc-track">
           ${b.videos.map((f, vi) => {
             const p = parse(f);
-            return `<button class="vc-card" data-b="${bi}" data-v="${vi}" aria-label="Play: ${esc(b.brand)}, ${esc(p.title)}">
-              <video class="vc-img" muted playsinline preload="metadata" src="${srcFor(b.brand, f)}#t=0.5"></video>
-              <span class="vc-overlay"></span>
-              ${p.musicOnly ? '<span class="vc-badge">Music only</span>' : ''}
-              <span class="vc-play" aria-hidden="true">${playIcon}</span>
-              <span class="vc-caption"><span class="vc-creator">${esc(b.brand)}</span><span class="vc-dish">${esc(p.title)}</span></span>
-            </button>`;
+            return `<div class="vc-item" data-id="${slug(p.title)}">
+              <button class="vc-card" data-b="${bi}" data-v="${vi}" aria-label="Play: ${esc(b.brand)}, ${esc(p.title)}">
+                <video class="vc-img" muted playsinline preload="metadata" src="${srcFor(b.brand, f)}#t=0.5"></video>
+                <span class="vc-overlay"></span>
+                ${p.musicOnly ? '<span class="vc-badge">Music only</span>' : ''}
+                <span class="vc-play" aria-hidden="true">${playIcon}</span>
+                <span class="vc-caption"><span class="vc-creator">${esc(b.brand)}</span><span class="vc-dish">${esc(p.title)}</span></span>
+              </button>
+            </div>`;
           }).join('')}
         </div>
         <div class="vc-dots"></div>
@@ -301,7 +350,111 @@
     });
     track.addEventListener('scroll', update, { passive: true });
     new ResizeObserver(build).observe(track);
+
+    // Opening a shot list widens its column: re-count pages and bring the open column into view
+    track.addEventListener('toggle', e => {
+      const item = e.target.closest('.vc-item');
+      if (!item) return;
+      item.classList.toggle('is-open', e.target.open);
+      build();
+      if (e.target.open) {
+        const left = item.offsetLeft - track.offsetLeft;
+        if (left < track.scrollLeft || left + item.offsetWidth > track.scrollLeft + track.clientWidth)
+          track.scrollTo({ left, behavior: 'smooth' });
+      }
+    }, true);
   }
+
+  // ---- Shot lists (site-data/ad-shot-lists.json), matched to cards by id ----
+  const shotChev = '<svg class="shot-chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>';
+  function shotListHTML(ad) {
+    const shots = ad.shots || [];
+    const rows = shots.map(s => `<tr>
+        <td class="c-n">${esc(s.n ?? '')}</td>
+        <td class="c-time">${esc(s.time ?? '')}</td>
+        <td class="c-type">${esc(s.shot ?? '')}</td>
+        <td>${esc(s.action ?? '')}</td>
+        <td>${esc(s.text ?? '')}</td>
+      </tr>`).join('');
+    return `<details class="shot">
+      <summary>Shot list <span class="shot-count">${shots.length} shots</span>${shotChev}</summary>
+      <div class="shot-body">
+        ${ad.structure ? `<div class="shot-field"><span class="shot-label">Structure</span><p>${esc(ad.structure)}</p></div>` : ''}
+        ${ad.takeaway ? `<div class="shot-field"><span class="shot-label">Takeaway</span><p>${esc(ad.takeaway)}</p></div>` : ''}
+        ${shots.length ? `<div class="shot-table-wrap"><table class="shot-table">
+          <thead><tr><th class="c-n">#</th><th class="c-time">Time</th><th class="c-type">Shot type</th><th>What happens</th><th>On-screen text</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table></div>` : ''}
+      </div>
+    </details>`;
+  }
+  fetch('site-data/ad-shot-lists.json')
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(json => {
+      const byId = new Map((json.ads || []).map(a => [a.id, a]));
+      document.querySelectorAll('.vc-item').forEach(item => {
+        const ad = byId.get(item.dataset.id);
+        if (ad) item.insertAdjacentHTML('beforeend', shotListHTML(ad));
+      });
+    })
+    .catch(() => { /* no shot lists available (e.g. opened as a local file): cards still work */ });
+
+  // ---- Potential Creators (site-data/potential-creators.json, made by sync-sheets.ps1) ----
+  // Columns are found by header text, so the spreadsheet's column order doesn't matter.
+  const norm = h => String(h).toLowerCase().replace(/[^a-z]/g, '');
+  const isIG = h => /ig$|instagram/.test(norm(h)), isTT = h => /tt$|tiktok/.test(norm(h));
+  const COLS = [
+    ['name',  h => norm(h).includes('name')],
+    ['igUrl', h => norm(h).includes('url') && isIG(h)],
+    ['ttUrl', h => norm(h).includes('url') && isTT(h)],
+    ['igF',   h => norm(h).includes('follow') && isIG(h)],
+    ['ttF',   h => norm(h).includes('follow') && isTT(h)],
+    ['niche', h => norm(h).includes('niche')],
+    ['notes', h => norm(h).includes('note')],
+  ];
+  function handleFrom(url) {
+    try {
+      const seg = new URL(url).pathname.split('/').filter(Boolean)[0] || '';
+      return seg ? '@' + seg.replace(/^@/, '') : 'Profile';
+    } catch { return 'Profile'; }
+  }
+  const linkify = s => esc(s).replace(/https?:\/\/[^\s<]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
+  function socialCell(url, count) {
+    if (!url && !count) return '<span class="ct-none">—</span>';
+    const link = url ? `<a class="ct-handle" href="${esc(url)}" target="_blank" rel="noopener">${esc(handleFrom(url))}</a>` : '';
+    return `${count ? `<span class="ct-count">${esc(count)}</span>` : ''}${link}`;
+  }
+  function renderCreators(json, bodyId, summaryId) {
+    const cols = json.columns || [], rows = json.rows || [];
+    const map = {};
+    COLS.forEach(([key, test]) => { const h = cols.find(c => test(c) && !Object.values(map).includes(c)); if (h) map[key] = h; });
+    const extra = cols.filter(c => !Object.values(map).includes(c)); // any new columns still show
+    const get = (r, k) => (map[k] && r[map[k]]) || '';
+    const updated = json.updated ? new Date(json.updated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+    document.getElementById(summaryId).textContent =
+      `${rows.length} creator${rows.length === 1 ? '' : 's'}${updated ? ` · spreadsheet last saved ${updated}` : ''}`;
+    if (!rows.length) {
+      document.getElementById(bodyId).innerHTML = '<div class="placeholder"><p class="placeholder-title">No creators yet</p><p class="placeholder-note">Add rows to the spreadsheet, then ask Claude to update the site.</p></div>';
+      return;
+    }
+    const body = rows.map(r => `<tr>
+        <td class="ct-name">${esc(get(r, 'name'))}</td>
+        <td class="ct-social">${socialCell(get(r, 'igUrl'), get(r, 'igF'))}</td>
+        <td class="ct-social">${socialCell(get(r, 'ttUrl'), get(r, 'ttF'))}</td>
+        <td><div class="ct-chips">${get(r, 'niche').split(',').map(s => s.trim()).filter(Boolean).map(s => `<span class="ct-chip">${esc(s)}</span>`).join('')}</div></td>
+        ${map.notes ? `<td class="ct-notes">${linkify(get(r, 'notes'))}</td>` : ''}
+        ${extra.map(c => `<td>${linkify(r[c] || '')}</td>`).join('')}
+      </tr>`).join('');
+    document.getElementById(bodyId).innerHTML = `<div class="ct-wrap"><table class="ct">
+      <thead><tr><th>Creator</th><th>Instagram</th><th>TikTok</th><th>Niche</th>${map.notes ? '<th>Notes</th>' : ''}${extra.map(c => `<th>${esc(c)}</th>`).join('')}</tr></thead>
+      <tbody>${body}</tbody></table></div>`;
+  }
+  fetch('site-data/potential-creators.json')
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(json => renderCreators(json, 'pc-body', 'pc-summary'))
+    .catch(() => {
+      document.getElementById('pc-body').innerHTML = '<div class="placeholder"><p class="placeholder-title">Creators couldn’t load</p><p class="placeholder-note">Open the site through its web address (Netlify or localhost:4324), not by double-clicking the file.</p></div>';
+    });
 
   // ---- Hover preview (muted) ----
   host.addEventListener('mouseover', e => {

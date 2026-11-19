@@ -1,0 +1,1410 @@
+{
+  "note": "Shot lists built from still frames sampled about every 1.5 seconds. Timestamps are approximate (±1.5s). Audio was not heard; caption text is what appeared on screen. Matches by filename for Joybird and Sundays.",
+  "ads": [
+    {
+      "id": "cozey-01",
+      "brand": "Cozey",
+      "title": "Cozey 01",
+      "duration": "~34s",
+      "audio": "Spoken (captioned)",
+      "product": "Ara Bed",
+      "structure": "Problem (tiny NYC apartment) → unbox and build → storage payoff → link in bio",
+      "takeaway": "Kinetic serif words ('Durable, stylish, storage') turn three features into a rhythm. The loop back to the opening frame makes it replayable.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0–4s",
+          "shot": "Medium",
+          "action": "Creator seated on bed by a big window, mug in hand, talking to camera.",
+          "text": "Living in New York has taught me that I have to maximize… (serif highlight words: 'New York', 'to maximize')"
+        },
+        {
+          "n": 2,
+          "time": "6–8s",
+          "shot": "Cutaway",
+          "action": "Empty room with city view, then bare wall and floor.",
+          "text": "the space with every piece of furniture that I buy for the apartment"
+        },
+        {
+          "n": 3,
+          "time": "9s",
+          "shot": "Medium",
+          "action": "Bed with layered pillows.",
+          "text": "and the bed was no exception."
+        },
+        {
+          "n": 4,
+          "time": "10.5s",
+          "shot": "Close-up",
+          "action": "Hand pushes into the bed's side panel and underside storage.",
+          "text": "—"
+        },
+        {
+          "n": 5,
+          "time": "12–15s",
+          "shot": "Medium",
+          "action": "Partner by window with stacked Cozey boxes; opens boxes, reads instructions, metal frame parts on floor.",
+          "text": "So I found this Ara Bed from Cozey that has built-in drawers"
+        },
+        {
+          "n": 6,
+          "time": "16.5–18s",
+          "shot": "Medium",
+          "action": "Creator back on bed, gesturing to camera.",
+          "text": "that have been a lifesaver for my closet storage."
+        },
+        {
+          "n": 7,
+          "time": "19.5s",
+          "shot": "Overhead",
+          "action": "Partner kneeling on floor assembling black metal frame.",
+          "text": "Durable, (kinetic word)"
+        },
+        {
+          "n": 8,
+          "time": "21s",
+          "shot": "Close-up",
+          "action": "Upholstered headboard edge and pillows.",
+          "text": "stylish, (kinetic word)"
+        },
+        {
+          "n": 9,
+          "time": "22.5–25.5s",
+          "shot": "Medium",
+          "action": "Partner lifts upholstered panel and builds the base; creator smooths bed.",
+          "text": "and they add exactly the warmth that I needed for the master bedroom,"
+        },
+        {
+          "n": 10,
+          "time": "27s",
+          "shot": "Close-up",
+          "action": "Hand running along upholstered side panel.",
+          "text": "which is tiny but cute."
+        },
+        {
+          "n": 11,
+          "time": "28.5–33s",
+          "shot": "Medium",
+          "action": "Creator to camera, gesturing.",
+          "text": "So if you need to maximize your storage (kinetic 'storage') / this bed (kinetic) I'm just gonna link it in my bio"
+        }
+      ]
+    },
+    {
+      "id": "cozey-02",
+      "brand": "Cozey",
+      "title": "Cozey 02",
+      "duration": "~29s",
+      "audio": "Spoken (captioned)",
+      "product": "Atmosphere Sleeper",
+      "structure": "Result first → disbelief → step-by-step conversion → lifestyle payoff",
+      "takeaway": "Opens on the finished result, then proves it with a calm, countable demo. Works because the transformation is the product.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0–1.5s",
+          "shot": "Wide",
+          "action": "Finished bed (sofa converted), gray quilted bedding. Header text 'New Atmosphere Sleeper'.",
+          "text": "this easily,"
+        },
+        {
+          "n": 2,
+          "time": "1.5–3s",
+          "shot": "Medium",
+          "action": "Presenter seated on the sofa, direct to camera.",
+          "text": "I didn't think a sofa"
+        },
+        {
+          "n": 3,
+          "time": "3–4.5s",
+          "shot": "Wide",
+          "action": "Bed again.",
+          "text": "could turn into a bed"
+        },
+        {
+          "n": 4,
+          "time": "4.5s",
+          "shot": "Medium",
+          "action": "Presenter back on the sofa, gesturing.",
+          "text": "but watch this!"
+        },
+        {
+          "n": 5,
+          "time": "6s",
+          "shot": "Wide",
+          "action": "Sofa and ottoman, no presenter.",
+          "text": "Atmosphere Sleeper,"
+        },
+        {
+          "n": 6,
+          "time": "7.5s",
+          "shot": "Medium",
+          "action": "Presenter reaches over the back and starts unfolding the seat.",
+          "text": "and it's hands-down"
+        },
+        {
+          "n": 7,
+          "time": "9s",
+          "shot": "Wide",
+          "action": "Finished bed.",
+          "text": "I've ever set up."
+        },
+        {
+          "n": 8,
+          "time": "10.5–12s",
+          "shot": "Close-up",
+          "action": "Hand lifts the seat back; seat tilts up.",
+          "text": "All you need to do / and the seats unfold"
+        },
+        {
+          "n": 9,
+          "time": "13.5–15s",
+          "shot": "Wide + insert",
+          "action": "Two-seater open flat; ottoman being unfolded.",
+          "text": "If you have the two seater, just unfold the ottoman too."
+        },
+        {
+          "n": 10,
+          "time": "16.5–18s",
+          "shot": "Close-up",
+          "action": "Hands press black Velcro strips between sections.",
+          "text": "Add the Velcro attachments in place to hold"
+        },
+        {
+          "n": 11,
+          "time": "19.5–21s",
+          "shot": "Close-up / Medium",
+          "action": "Padded topper laid over, pillow placed.",
+          "text": "lay down the padded… and finish it off with"
+        },
+        {
+          "n": 12,
+          "time": "22.5s",
+          "shot": "Medium",
+          "action": "Person asleep under gray quilt.",
+          "text": "the Sleep Kit bedding"
+        },
+        {
+          "n": 13,
+          "time": "24–25.5s",
+          "shot": "Wide / Close-up",
+          "action": "Sofa closed again; close-up of fabric corner.",
+          "text": "It's everything you love about the Atmosphere sofa,"
+        },
+        {
+          "n": 14,
+          "time": "27s",
+          "shot": "Medium",
+          "action": "Person reading in bed built into the sofa.",
+          "text": "now with a bed built in."
+        }
+      ]
+    },
+    {
+      "id": "cozey-03",
+      "brand": "Cozey",
+      "title": "Cozey 03",
+      "duration": "~12s",
+      "audio": "Music only",
+      "product": "Cielo-style sectional (family story)",
+      "structure": "Title card → store visit → delivery → family on sofa",
+      "takeaway": "A family-feeling montage with one clean caption line per beat. Emotion over features.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0–1.5s",
+          "shot": "Medium",
+          "action": "Woman walks toward a cream sectional in a tall room with sheer curtains.",
+          "text": "Your family's new hangout spot."
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Close-up",
+          "action": "Sofa corner with two pillows.",
+          "text": "Your family's new hangout spot."
+        },
+        {
+          "n": 3,
+          "time": "3s",
+          "shot": "Wide",
+          "action": "Storefront exterior; mother and child walk in.",
+          "text": "We tried all the different collections"
+        },
+        {
+          "n": 4,
+          "time": "4.5s",
+          "shot": "Medium",
+          "action": "Stacked Cozey boxes; woman hauling one.",
+          "text": "And found the perfect sofa for us"
+        },
+        {
+          "n": 5,
+          "time": "6s",
+          "shot": "Medium",
+          "action": "Woman lifts a back module into place.",
+          "text": "With deep seats and cloud-like comfort"
+        },
+        {
+          "n": 6,
+          "time": "7.5s",
+          "shot": "Wide",
+          "action": "Parents and child on the sofa.",
+          "text": "This is best seat in the house"
+        },
+        {
+          "n": 7,
+          "time": "9–10.5s",
+          "shot": "Wide",
+          "action": "Kids run and jump onto the sofa, then cuddle with mom.",
+          "text": "Some good things do come easy"
+        }
+      ]
+    },
+    {
+      "id": "cozey-04",
+      "brand": "Cozey",
+      "title": "Cozey 04",
+      "duration": "~22s",
+      "audio": "Music only",
+      "product": "Ciello sofa and Eclipse coffee table",
+      "structure": "Title → build → feature tags ('water resistant', 'soft', 'modular') → styling → lifestyle",
+      "takeaway": "Feature claims as short serif tags over a close-up. One shot appears to show liquid on the fabric; worth checking in the original video before citing it as a test.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0–1.5s",
+          "shot": "Medium",
+          "action": "Creator leans over a dark brown sofa, arranging cushions. Large script text on screen.",
+          "text": "Living room upgrade with Cozey"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Medium",
+          "action": "Creator behind the sofa; a cat's tail in the foreground.",
+          "text": "Living room upgrade with Cozey"
+        },
+        {
+          "n": 3,
+          "time": "3s",
+          "shot": "Wide",
+          "action": "Creator reclines on the sofa.",
+          "text": "The Ciello sofa"
+        },
+        {
+          "n": 4,
+          "time": "4.5–6s",
+          "shot": "Close-up",
+          "action": "Cushion close-up; liquid appears on the fabric and a hand/cloth enters the frame (not fully clear in sampled frames).",
+          "text": "is water resistant"
+        },
+        {
+          "n": 5,
+          "time": "7.5s",
+          "shot": "Close-up",
+          "action": "Hand brushes the fabric at the seam.",
+          "text": "unmistakably soft"
+        },
+        {
+          "n": 6,
+          "time": "9s",
+          "shot": "Medium",
+          "action": "Creator fluffs a cushion.",
+          "text": "and fully modular"
+        },
+        {
+          "n": 7,
+          "time": "10.5s",
+          "shot": "Medium",
+          "action": "Creator opens a round coffee table lid.",
+          "text": "Eclipse coffee table as final touch"
+        },
+        {
+          "n": 8,
+          "time": "12–13.5s",
+          "shot": "Overhead",
+          "action": "Table top with a sliding lid and a book; objects set on it.",
+          "text": "sleek and adaptable design"
+        },
+        {
+          "n": 9,
+          "time": "15–18s",
+          "shot": "Wide",
+          "action": "Creator sits with headphones, then lies reading, then wrapped in a blanket.",
+          "text": "living room has never felt this cozy and elevated"
+        },
+        {
+          "n": 10,
+          "time": "19.5–21s",
+          "shot": "Close-up / Medium",
+          "action": "Blue pillow on cushion; returns to the opening framing.",
+          "text": "Living room upgrade with Cozey"
+        }
+      ]
+    },
+    {
+      "id": "cozey-05",
+      "brand": "Cozey",
+      "title": "Cozey 05",
+      "duration": "~28s",
+      "audio": "Spoken or music (captions are handwritten tags)",
+      "product": "Cozey curved sofa with Aquaforte™ Velvet covers",
+      "structure": "Dark sofa → cover swap to light blue → feature tags → cozy lifestyle with pets",
+      "takeaway": "The cover swap is the whole story. Handwritten text tags ('washable covers', 'water-repellent') feel casual, not corporate.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Wide",
+          "action": "Creator stands in front of a dark faux-fur sofa. Handwritten text 'fall living room…'.",
+          "text": "fall living room refresh with Cozey"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Wide",
+          "action": "Same room, light-blue sofa; creator lounges on it.",
+          "text": "fall living room refresh with Cozey"
+        },
+        {
+          "n": 3,
+          "time": "3s",
+          "shot": "Wide",
+          "action": "Dark sofa with pastel modules; creator holds up a dark cover.",
+          "text": "—"
+        },
+        {
+          "n": 4,
+          "time": "4.5s",
+          "shot": "Overhead",
+          "action": "Creator folds a blue-green cover on a pale module.",
+          "text": "—"
+        },
+        {
+          "n": 5,
+          "time": "6s",
+          "shot": "Medium",
+          "action": "Two people fit a blue velvet cover over a module. Pink text 'Aquaforte™ Velvet Co'.",
+          "text": "Aquaforte™ Velvet Co"
+        },
+        {
+          "n": 6,
+          "time": "7.5–9s",
+          "shot": "Wide",
+          "action": "Dark sofa, gesturing hand; then blue sofa styled with coffee table items.",
+          "text": "—"
+        },
+        {
+          "n": 7,
+          "time": "10.5–12s",
+          "shot": "Wide",
+          "action": "Blue curved sofa from the side; room with forest view.",
+          "text": "washable covers"
+        },
+        {
+          "n": 8,
+          "time": "13.5s",
+          "shot": "Extreme close-up",
+          "action": "Blue fabric with a streak of water.",
+          "text": "water-repellent"
+        },
+        {
+          "n": 9,
+          "time": "15s",
+          "shot": "Overhead POV",
+          "action": "Hand on the blue arm.",
+          "text": "water-repellent"
+        },
+        {
+          "n": 10,
+          "time": "16.5s",
+          "shot": "Close-up",
+          "action": "Black-and-white cat sitting on the blue sofa.",
+          "text": "—"
+        },
+        {
+          "n": 11,
+          "time": "18s",
+          "shot": "Overhead POV",
+          "action": "Record player; hand holds a coffee cup.",
+          "text": "—"
+        },
+        {
+          "n": 12,
+          "time": "19.5–22.5s",
+          "shot": "Medium / Wide",
+          "action": "Creator shakes out a white blanket, sits, reads; cat jumps up.",
+          "text": "—"
+        },
+        {
+          "n": 13,
+          "time": "24–25.5s",
+          "shot": "Wide",
+          "action": "Couple and dog on the sofa.",
+          "text": "—"
+        },
+        {
+          "n": 14,
+          "time": "27s",
+          "shot": "Wide",
+          "action": "Back to the dark-sofa opening; text begins again.",
+          "text": "fal…"
+        }
+      ]
+    },
+    {
+      "id": "cozey-06",
+      "brand": "Cozey",
+      "title": "Cozey 06",
+      "duration": "~41s",
+      "audio": "Spoken (captioned)",
+      "product": "Cielo sectional (white), Cozey rug, coffee table, armchairs, storage ottoman",
+      "structure": "Objection hook → 'hear me out' → comfort → covers → modular → styling → loop",
+      "takeaway": "The strongest structure in the set: name the fear, answer it, then loop back to the opening line. This is the one your Wilder script is modeled on.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Wide",
+          "action": "Creator with arms out in front of a large white sectional.",
+          "text": "a white sofa with little hands around"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Medium",
+          "action": "Creator lowers onto the sofa.",
+          "text": "probably sounds like a terrible idea"
+        },
+        {
+          "n": 3,
+          "time": "3s",
+          "shot": "Wide",
+          "action": "Creator pushes a Cozey box into the room.",
+          "text": "but hear me out this is our Cielo sofa from Cozey"
+        },
+        {
+          "n": 4,
+          "time": "4.5s",
+          "shot": "Medium",
+          "action": "Creator lifts a back cushion; black interior visible.",
+          "text": "and I feel like it gives me the best of both worlds"
+        },
+        {
+          "n": 5,
+          "time": "6s",
+          "shot": "Close-up",
+          "action": "Cushion corner and zipper edge.",
+          "text": "—"
+        },
+        {
+          "n": 6,
+          "time": "7.5s",
+          "shot": "Selfie / Close-up",
+          "action": "Creator lounging with an iced drink, smiling at camera.",
+          "text": "it's big relaxed and ridiculously comfortable"
+        },
+        {
+          "n": 7,
+          "time": "9s",
+          "shot": "Wide",
+          "action": "Creator standing by the sectional.",
+          "text": "—"
+        },
+        {
+          "n": 8,
+          "time": "10.5–12s",
+          "shot": "Wide",
+          "action": "Full sectional with coffee table; chaise angle.",
+          "text": "but still looks so beautiful in our space"
+        },
+        {
+          "n": 9,
+          "time": "13.5–15s",
+          "shot": "Close-up / Medium",
+          "action": "Hands remove a cushion cover; creator leans in.",
+          "text": "and the best part is the covers are completely removable and washable"
+        },
+        {
+          "n": 10,
+          "time": "16.5s",
+          "shot": "Macro",
+          "action": "Black connector clip between modules.",
+          "text": "and everything is completely modular"
+        },
+        {
+          "n": 11,
+          "time": "18s",
+          "shot": "Medium",
+          "action": "Creator pushes a module.",
+          "text": "so we can move it around"
+        },
+        {
+          "n": 12,
+          "time": "19.5s",
+          "shot": "Close-up",
+          "action": "Ottoman with the lid open, black interior.",
+          "text": "and then lock it into place with the connectors"
+        },
+        {
+          "n": 13,
+          "time": "21–22.5s",
+          "shot": "Close-up / Overhead",
+          "action": "Hand on rug; coffee table corner and armchair.",
+          "text": "we've paired it with Cozey's washable rug"
+        },
+        {
+          "n": 14,
+          "time": "24–25.5s",
+          "shot": "Medium / Close-up",
+          "action": "Creator moves an armchair; ottoman lid up.",
+          "text": "coffee table and armchairs to bring the whole space together"
+        },
+        {
+          "n": 15,
+          "time": "27–28.5s",
+          "shot": "Medium",
+          "action": "Creator kneels, opens the storage ottoman, tucks in throws.",
+          "text": "brownie points with this storage ottoman"
+        },
+        {
+          "n": 16,
+          "time": "30s",
+          "shot": "Close-up",
+          "action": "Coffee table styling: candles, objects.",
+          "text": "with a few extra styling pieces"
+        },
+        {
+          "n": 17,
+          "time": "31.5–34.5s",
+          "shot": "Wide",
+          "action": "Styled sofa, vase and table; room overview.",
+          "text": "the whole room now feels considered and elevated"
+        },
+        {
+          "n": 18,
+          "time": "36s",
+          "shot": "POV",
+          "action": "Hand flips through a magazine on the coffee table.",
+          "text": "but still like home we can actually live in spills"
+        },
+        {
+          "n": 19,
+          "time": "37.5–39s",
+          "shot": "Wide",
+          "action": "Creator holds a drink; ends with arms out as at the start.",
+          "text": "little hands and all / a white sofa with little hands around"
+        }
+      ]
+    },
+    {
+      "id": "cozey-07",
+      "brand": "Cozey",
+      "title": "Cozey 07",
+      "duration": "~16s",
+      "audio": "Music only",
+      "product": "Cielo sectional",
+      "structure": "Single caption → cats settle on the sofa → nap",
+      "takeaway": "Almost no text. Pets just live on the sofa. Calm, aspirational pet content, but pets are decoration here, not a proof point.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Medium",
+          "action": "Creator in pajamas fluffs a large cushion beside the sectional.",
+          "text": "When every piece just makes sense."
+        },
+        {
+          "n": 2,
+          "time": "1.5–3s",
+          "shot": "Wide",
+          "action": "Sectional with flowers on a side table; orange cat on the rug, creator on sofa.",
+          "text": "—"
+        },
+        {
+          "n": 3,
+          "time": "4.5s",
+          "shot": "Close-up",
+          "action": "Chaise end and a vase of flowers in the foreground.",
+          "text": "—"
+        },
+        {
+          "n": 4,
+          "time": "6s",
+          "shot": "Wide",
+          "action": "Black cat sits on the sofa end; creator in the background.",
+          "text": "—"
+        },
+        {
+          "n": 5,
+          "time": "7.5s",
+          "shot": "Close-up",
+          "action": "Seat cushion and arm pillow.",
+          "text": "—"
+        },
+        {
+          "n": 6,
+          "time": "9s",
+          "shot": "Medium",
+          "action": "Black cat on the chaise.",
+          "text": "—"
+        },
+        {
+          "n": 7,
+          "time": "10.5s",
+          "shot": "Close-up",
+          "action": "Sofa base and coffee table edge, low angle.",
+          "text": "—"
+        },
+        {
+          "n": 8,
+          "time": "12–13.5s",
+          "shot": "Wide",
+          "action": "Creator curled up asleep on the sofa, black cat beside her.",
+          "text": "—"
+        }
+      ]
+    },
+    {
+      "id": "cozey-08",
+      "brand": "Cozey",
+      "title": "Cozey 08",
+      "duration": "~24s",
+      "audio": "Spoken (captioned)",
+      "product": "Atmosphere sofa",
+      "structure": "Dog in action → joke → modular → washable covers → 'couch test' → dog approves",
+      "takeaway": "Humor ('And by we, I mean her') plus a dog as the tester. Cute, not rigorous: no damage or stress test shown.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Close-up",
+          "action": "Goldendoodle steps onto the sofa, sniffing cushions.",
+          "text": "We wanted a space we could actually get comfortable on"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Close-up",
+          "action": "Dog plays with a toy on a cushion.",
+          "text": "We wanted a space we could actually get comfortable on"
+        },
+        {
+          "n": 3,
+          "time": "3s",
+          "shot": "Medium",
+          "action": "Man on the sofa petting the dog lying beside him; room with a bay window.",
+          "text": "And by 'we' I mean her"
+        },
+        {
+          "n": 4,
+          "time": "4.5s",
+          "shot": "Close-up",
+          "action": "Sofa corner with deep seat cushions.",
+          "text": "So we landed on the Atmosphere sofa"
+        },
+        {
+          "n": 5,
+          "time": "6s",
+          "shot": "Wide",
+          "action": "Room view with sofa and table.",
+          "text": "One, because it's modular"
+        },
+        {
+          "n": 6,
+          "time": "7.5s",
+          "shot": "Close-up",
+          "action": "Strap and loop connector at the seat edge.",
+          "text": "So we can build it to actually fit any space that we're in"
+        },
+        {
+          "n": 7,
+          "time": "9–10.5s",
+          "shot": "Medium",
+          "action": "Man pulls a cover off a module.",
+          "text": "Plus the covers are washable and swappable"
+        },
+        {
+          "n": 8,
+          "time": "12s",
+          "shot": "Close-up",
+          "action": "Cover half off, white foam block underneath.",
+          "text": "Plus the covers are washable and swappable"
+        },
+        {
+          "n": 9,
+          "time": "13.5–15s",
+          "shot": "Wide",
+          "action": "Same room with a tan cover, then a cream cover version.",
+          "text": "Keeping the couch clean and the styles refreshed each season"
+        },
+        {
+          "n": 10,
+          "time": "16.5–18s",
+          "shot": "Wide",
+          "action": "Dog climbs onto the cream sofa and settles.",
+          "text": "Now the best part, the couch test"
+        },
+        {
+          "n": 11,
+          "time": "19.5s",
+          "shot": "Close-up",
+          "action": "Dog rests its head on the sofa.",
+          "text": "I say, she approves!"
+        },
+        {
+          "n": 12,
+          "time": "21–22.5s",
+          "shot": "Close-up",
+          "action": "Dog from behind hops onto the sofa, then off.",
+          "text": "We wanted a space we could actually get comfortable on"
+        }
+      ]
+    },
+    {
+      "id": "cozey-09",
+      "brand": "Cozey",
+      "title": "Cozey 09",
+      "duration": "~37s",
+      "audio": "Spoken (captioned)",
+      "product": "Cielo sectional, Dani rug, Eclipse side table",
+      "structure": "Journey story: store visit → goals → choice → features → result",
+      "takeaway": "Storytelling through a real purchase journey, including the store visit. Credible because it shows the process, but feature-heavy.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Close-up",
+          "action": "Cream sofa corner and round wooden side table. Script title.",
+          "text": "Our New Living Room / let's set up our dreamy new living room space"
+        },
+        {
+          "n": 2,
+          "time": "1.5–3s",
+          "shot": "Wide",
+          "action": "Cozey storefront exterior, then closer on the sign.",
+          "text": "when we started shopping for new furniture / Cozey was an easy choice"
+        },
+        {
+          "n": 3,
+          "time": "4.5–6s",
+          "shot": "Wide",
+          "action": "Inside the store: sofa, shelving with pillows.",
+          "text": "our first stop was the Cozey store on Robson Street"
+        },
+        {
+          "n": 4,
+          "time": "7.5–9s",
+          "shot": "Medium",
+          "action": "Red velvet sofa and side table; man on a green sofa in store.",
+          "text": "our goal was to create a space that felt warm, functional"
+        },
+        {
+          "n": 5,
+          "time": "10.5–12s",
+          "shot": "Medium",
+          "action": "Couple lay a black foam floor mat at home.",
+          "text": "and comfortable for everyday life as we become a family of three"
+        },
+        {
+          "n": 6,
+          "time": "13.5–15s",
+          "shot": "Wide",
+          "action": "Cream sectional, glass coffee table, sideboard.",
+          "text": "while still looking clean and thoughtfully put together / we ended up going with the Cielo Sectional"
+        },
+        {
+          "n": 7,
+          "time": "16.5–19.5s",
+          "shot": "Wide",
+          "action": "Couple sit then lie on the sectional.",
+          "text": "The Dani Rug and the Eclipse Side Table / The Cielo Sectional is modular"
+        },
+        {
+          "n": 8,
+          "time": "21–22.5s",
+          "shot": "Medium",
+          "action": "Couple fluff and rearrange cushions.",
+          "text": "so it can easily adapt to different spaces"
+        },
+        {
+          "n": 9,
+          "time": "24–25.5s",
+          "shot": "Close-up",
+          "action": "Cushion and chair corner.",
+          "text": "washable cushion covers make it easy to keep looking fresh"
+        },
+        {
+          "n": 10,
+          "time": "27–28.5s",
+          "shot": "Wide",
+          "action": "Man reclines near a window; side table.",
+          "text": "The Dani Rug is also washable / which is perfect for a high traffic living room"
+        },
+        {
+          "n": 11,
+          "time": "30s",
+          "shot": "Close-up",
+          "action": "Round side table with hidden storage; remotes.",
+          "text": "and the Eclipse Side Table has hidden storage"
+        },
+        {
+          "n": 12,
+          "time": "31.5–36s",
+          "shot": "Wide",
+          "action": "Couple lounging; chair; final wide of the room.",
+          "text": "we couldn't be happier with how it turned out"
+        }
+      ]
+    },
+    {
+      "id": "joybird-01",
+      "brand": "Joybird",
+      "title": "Joybird 01",
+      "duration": "~15s",
+      "audio": "Music only",
+      "product": "Modular sectional (unconfirmed model)",
+      "structure": "POV hook → timestamped vignettes → loop back to opening",
+      "takeaway": "A timestamp device ('8:00am coffee') proves 'this couch gets used' without a single feature claim. Simple and rewatchable.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0–1.5s",
+          "shot": "Medium",
+          "action": "Creator in front of a beige sofa, gesturing.",
+          "text": "POV: this couch gets used"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Overhead POV",
+          "action": "Dark mug of coffee held on a lap, legs on the sofa.",
+          "text": "coffee 8:00am"
+        },
+        {
+          "n": 3,
+          "time": "3s",
+          "shot": "Medium",
+          "action": "Woman works on a laptop on the sofa.",
+          "text": "work 8:30am"
+        },
+        {
+          "n": 4,
+          "time": "4.5s",
+          "shot": "Overhead POV",
+          "action": "Blurred blanket and denim lap.",
+          "text": "breakfast 11:30am"
+        },
+        {
+          "n": 5,
+          "time": "6s",
+          "shot": "Overhead POV",
+          "action": "Plate of fruit on a lap.",
+          "text": "breakfast 11:30am"
+        },
+        {
+          "n": 6,
+          "time": "7.5–9s",
+          "shot": "Wide",
+          "action": "Couple play video games on the sofa, laughing.",
+          "text": "down time 1:00pm"
+        },
+        {
+          "n": 7,
+          "time": "10.5s",
+          "shot": "Overhead POV",
+          "action": "Plate of tacos on a lap.",
+          "text": "lunch 2:00pm"
+        },
+        {
+          "n": 8,
+          "time": "12s",
+          "shot": "Wide",
+          "action": "Couple under a blanket watching a movie.",
+          "text": "movie time 7:00pm"
+        },
+        {
+          "n": 9,
+          "time": "13.5s",
+          "shot": "Medium",
+          "action": "Creator in front of the sofa again (loop).",
+          "text": "POV: this couch gets used"
+        }
+      ]
+    },
+    {
+      "id": "sundays-01",
+      "brand": "Sundays",
+      "title": "Sundays 01",
+      "duration": "~40s",
+      "audio": "Spoken or music (captions)",
+      "product": "Modular sofas (named configurations)",
+      "structure": "Showroom hook → configurations named on screen → tactile feature callouts → in-store CTA",
+      "takeaway": "Names each configuration by its use ('MOVIE NIGHT', 'GET TOGETHER', 'CHILL TIME', 'COMMON GROUND'), so the viewer picks a lifestyle, not a spec sheet. Hands on fabric throughout.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0–1.5s",
+          "shot": "Medium",
+          "action": "Creator stands on a light-blue sofa in a showroom.",
+          "text": "this your dream sofa"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Medium",
+          "action": "Creator seated on a white sectional.",
+          "text": "your dream sofa"
+        },
+        {
+          "n": 3,
+          "time": "3s",
+          "shot": "Wide",
+          "action": "Light-blue sectional; creator sits with the chaise.",
+          "text": "Modular designs"
+        },
+        {
+          "n": 4,
+          "time": "4.5–6s",
+          "shot": "Close-up",
+          "action": "Fabric swatch wall; hand pulls a swatch and rubs it.",
+          "text": "Fabric swatches"
+        },
+        {
+          "n": 5,
+          "time": "7.5s",
+          "shot": "Wide",
+          "action": "Blue sofa, creator seated.",
+          "text": "everyone"
+        },
+        {
+          "n": 6,
+          "time": "9s",
+          "shot": "Close-up",
+          "action": "Rust sofa and big caption.",
+          "text": "MOVIE NIGHT"
+        },
+        {
+          "n": 7,
+          "time": "10.5–12s",
+          "shot": "Close-up / Medium",
+          "action": "Hand on plush rust cushion; creator stretches out.",
+          "text": "plush, deep seats / sink-in comfort / made for stretching out"
+        },
+        {
+          "n": 8,
+          "time": "15–19.5s",
+          "shot": "Wide",
+          "action": "White sectional 'GET TOGETHER'; blue sectional with callout arrows.",
+          "text": "soft yet supportive cushions / that requires"
+        },
+        {
+          "n": 9,
+          "time": "21–22.5s",
+          "shot": "Medium / Wide",
+          "action": "Creator fluffs a white cushion; light-blue sofa 'CHILL TIME'.",
+          "text": "the Chill Time has"
+        },
+        {
+          "n": 10,
+          "time": "24–25.5s",
+          "shot": "Close-up / Medium",
+          "action": "Hand on grey welt-stitched cushion; creator hides behind a green pillow.",
+          "text": "Welt-stitched cushions / Slimmer profile"
+        },
+        {
+          "n": 11,
+          "time": "27–30s",
+          "shot": "Wide",
+          "action": "Dark brown sectional 'COMMON GROUND'; creator seated; callout 'No fluffing (or fussing)'.",
+          "text": "It's got generous space… cushions that"
+        },
+        {
+          "n": 12,
+          "time": "31.5–34.5s",
+          "shot": "Close-up",
+          "action": "Hands on brown fabric.",
+          "text": "always look put together. / thinking about upgrading / now is the time."
+        },
+        {
+          "n": 13,
+          "time": "36–37.5s",
+          "shot": "Wide",
+          "action": "Creator by the rust sofa glancing off; blue sofa end frame.",
+          "text": "or come check them out in person."
+        }
+      ]
+    },
+    {
+      "id": "rove-concepts-01",
+      "brand": "Rove Concepts",
+      "title": "Rove Concepts 01",
+      "duration": "~37s",
+      "audio": "Music or voice (captions)",
+      "product": "Low-profile sofa with walnut side table drawer",
+      "structure": "Slow luxe reveal → hand-on-product moments → drawer detail → quiet lifestyle",
+      "takeaway": "Premium, unhurried, minimal text. The hidden walnut drawer is the single 'wow' detail. No pets or hard sell.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0–1.5s",
+          "shot": "Wide",
+          "action": "Living room, cream sectional with walnut side table in the middle ground.",
+          "text": "furnish… they define it the"
+        },
+        {
+          "n": 2,
+          "time": "3–4.5s",
+          "shot": "Medium",
+          "action": "Creator leans in, lifts and adjusts a back cushion.",
+          "text": "by Rove / where sculptural design…"
+        },
+        {
+          "n": 3,
+          "time": "6s",
+          "shot": "Medium",
+          "action": "Leopard-print pillow placed on the sofa.",
+          "text": "everyday comfort"
+        },
+        {
+          "n": 4,
+          "time": "7.5–9s",
+          "shot": "Close-up / Low angle",
+          "action": "Walnut console beside the seat; low shot of the sofa on a rug.",
+          "text": "thoughtfully crafted with refined…"
+        },
+        {
+          "n": 5,
+          "time": "10.5–12s",
+          "shot": "Close-up",
+          "action": "Hand glides over the seat surface.",
+          "text": "timeless / about Rove"
+        },
+        {
+          "n": 6,
+          "time": "13.5s",
+          "shot": "Close-up",
+          "action": "Walnut side table, orchid, glass mug.",
+          "text": "is how effortless the"
+        },
+        {
+          "n": 7,
+          "time": "15–16.5s",
+          "shot": "Close-up",
+          "action": "Hand opens a drawer in the walnut side.",
+          "text": "elevated / elevated design exceptional quality"
+        },
+        {
+          "n": 8,
+          "time": "18–19.5s",
+          "shot": "Close-up / Low angle",
+          "action": "Rug texture; low angle across the sofa.",
+          "text": "—"
+        },
+        {
+          "n": 9,
+          "time": "21–22.5s",
+          "shot": "Wide / Close-up",
+          "action": "Sofa on rug; corner with leopard pillow.",
+          "text": "—"
+        },
+        {
+          "n": 10,
+          "time": "24–30s",
+          "shot": "Medium",
+          "action": "Creator journals on the sofa.",
+          "text": "I've created… elevated…"
+        },
+        {
+          "n": 11,
+          "time": "31.5–34.5s",
+          "shot": "Medium",
+          "action": "Creator reaches to the drawer and tucks the journal inside.",
+          "text": "are built on pieces to be lived in"
+        }
+      ]
+    },
+    {
+      "id": "rove-lab-01",
+      "brand": "Rove Lab",
+      "title": "Rove Lab 01",
+      "duration": "~38s",
+      "audio": "Music (captions word-by-word)",
+      "product": "Boxed modular sectional (foam)",
+      "structure": "Energetic hook → unbox and expand → 'no tools' → jump test → warranty → hard CTA",
+      "takeaway": "Word-by-word caps over fast cuts. The creator literally jumps on the sofa to show it holds up, the closest thing in the set to a durability demo.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Wide",
+          "action": "Creator in a denim shirt dances in front of a blue sectional; picture-in-picture inset of another woman with boxes.",
+          "text": "IN / BUT"
+        },
+        {
+          "n": 2,
+          "time": "3s",
+          "shot": "Close-up",
+          "action": "Creator's face, smiling and swaying.",
+          "text": "YEAH"
+        },
+        {
+          "n": 3,
+          "time": "4.5–6s",
+          "shot": "Wide",
+          "action": "Grey sectional in a showroom; a person carries boxes in the background.",
+          "text": "SECTIONAL A"
+        },
+        {
+          "n": 4,
+          "time": "7.5–9s",
+          "shot": "Medium",
+          "action": "Creator unwraps a white module from plastic among boxes.",
+          "text": "IMPRESSIVE / NO"
+        },
+        {
+          "n": 5,
+          "time": "10.5–12s",
+          "shot": "Medium",
+          "action": "White sectional being assembled; black-backed module shown.",
+          "text": "TOOLS / INSTRUCTIONS"
+        },
+        {
+          "n": 6,
+          "time": "13.5–15s",
+          "shot": "Wide",
+          "action": "Creator reclines on the finished white sectional.",
+          "text": "EXPAND / TOGETHER"
+        },
+        {
+          "n": 7,
+          "time": "16.5–18s",
+          "shot": "Medium",
+          "action": "Creator seated on the blue sofa, talking with her hands.",
+          "text": "THIS / NOT"
+        },
+        {
+          "n": 8,
+          "time": "19.5–21s",
+          "shot": "Close-up",
+          "action": "Foot steps onto the seat; creator jumps.",
+          "text": "OR / 100%"
+        },
+        {
+          "n": 9,
+          "time": "22.5s",
+          "shot": "Close-up",
+          "action": "Creator presses the arm to show firmness.",
+          "text": "FOAM"
+        },
+        {
+          "n": 10,
+          "time": "24–27s",
+          "shot": "Wide",
+          "action": "Creator hops on and off the sofa with arms out.",
+          "text": "FOOL / SUPPORTIVE / WE"
+        },
+        {
+          "n": 11,
+          "time": "28.5s",
+          "shot": "Close-up",
+          "action": "Hand presses the seat.",
+          "text": "WARRANTY"
+        },
+        {
+          "n": 12,
+          "time": "30–33s",
+          "shot": "Medium",
+          "action": "Creator standing, arms open.",
+          "text": "SECTIONAL / BEGINNING / ROVE"
+        },
+        {
+          "n": 13,
+          "time": "33–36s",
+          "shot": "Medium",
+          "action": "Hands on hips; the inset returns.",
+          "text": "SHOP ROVE LAB NOW"
+        }
+      ]
+    },
+    {
+      "id": "rove-lab-02",
+      "brand": "Rove Lab",
+      "title": "Rove Lab 02",
+      "duration": "~36s",
+      "audio": "Spoken (captioned)",
+      "product": "Boxed modular sectional (rust/terracotta)",
+      "structure": "Founder-style intro → why he needed a couch → speedy delivery → vision for the space",
+      "takeaway": "A personal business story ('culinary and production studio') carries the whole ad. Delivery speed is the proof point. Soft ending.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Medium",
+          "action": "Man holds up a pink Rove box in a loft studio.",
+          "text": "So, here's the thing"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Medium",
+          "action": "He pulls plastic wrap off; an inset image of the studio shows at top.",
+          "text": "When I set the goal of building my new culinary and production studio in just 30 days…"
+        },
+        {
+          "n": 3,
+          "time": "3–6s",
+          "shot": "Medium",
+          "action": "Unwrapping and lifting a puffy rust module.",
+          "text": "I knew that things were going to be a little tight and I knew"
+        },
+        {
+          "n": 4,
+          "time": "7.5–9s",
+          "shot": "Medium",
+          "action": "Placing modules next to each other.",
+          "text": "one of the first things I had to buy was a couch for my community to sit on"
+        },
+        {
+          "n": 5,
+          "time": "10.5–13.5s",
+          "shot": "Medium",
+          "action": "Positioning modules, adjusting each box.",
+          "text": "and after seeing this Rove Lab couch in my friend's house, I knew it checked every box"
+        },
+        {
+          "n": 6,
+          "time": "15–16.5s",
+          "shot": "Medium / Wide",
+          "action": "Lifts a pillow; modules joined into a sectional.",
+          "text": "I needed something that was stylish, vibrant, flexible, and plenty of room"
+        },
+        {
+          "n": 7,
+          "time": "18–19.5s",
+          "shot": "Medium",
+          "action": "Sits and laughs on the sofa.",
+          "text": "for butts in seats because soon this studio will be packed out"
+        },
+        {
+          "n": 8,
+          "time": "21–25.5s",
+          "shot": "Wide / Macro",
+          "action": "Wide studio view; macro of chenille texture.",
+          "text": "So yes, I was very shocked when I ordered an entire couch online and this gorgeous 10-foot sectional arrived in my studio in less than a week"
+        },
+        {
+          "n": 9,
+          "time": "27–30s",
+          "shot": "Wide / Close-up",
+          "action": "Studio with a long dining table; yellow wall decor; sunlit plant above the sofa.",
+          "text": "I cannot wait for this couch to come to life through all dinner party, co-working days and production shoots I have planned"
+        },
+        {
+          "n": 10,
+          "time": "31.5–33s",
+          "shot": "Medium",
+          "action": "He flops onto the sofa, then stands.",
+          "text": "but for the meantime Imma get a little cozy"
+        },
+        {
+          "n": 11,
+          "time": "34.5s",
+          "shot": "Medium",
+          "action": "Bends to pick up the pink box (loop to the opening).",
+          "text": "—"
+        }
+      ]
+    },
+    {
+      "id": "rove-lab-03",
+      "brand": "Rove Lab",
+      "title": "Rove Lab 03",
+      "duration": "~35s",
+      "audio": "Music only",
+      "product": "Boxed modular sectional (sage/green, 'boneless couch')",
+      "structure": "Unbox → build → guests and dog use it → zip-off cover → evening montage with dog",
+      "takeaway": "The most pet-realistic ad in the set: a dog jumps on, naps, and gets cuddled. Still never mentions durability or pets.",
+      "shots": [
+        {
+          "n": 1,
+          "time": "0s",
+          "shot": "Medium",
+          "action": "Stack of Rove boxes; mint text over the shot.",
+          "text": "so this is what a boneless couch looks like"
+        },
+        {
+          "n": 2,
+          "time": "1.5s",
+          "shot": "Medium",
+          "action": "Person unrolls a compressed foam module from plastic wrap.",
+          "text": "so this is what a boneless couch looks like"
+        },
+        {
+          "n": 3,
+          "time": "3–4.5s",
+          "shot": "Wide",
+          "action": "Empty room; assembled green sofa, then the sectional with chaise.",
+          "text": "—"
+        },
+        {
+          "n": 4,
+          "time": "6–7.5s",
+          "shot": "Wide",
+          "action": "Friends sit around while a dog hops onto the sofa.",
+          "text": "—"
+        },
+        {
+          "n": 5,
+          "time": "9s",
+          "shot": "Macro",
+          "action": "Hand pulls a zipper and Velcro strips on a cover.",
+          "text": "—"
+        },
+        {
+          "n": 6,
+          "time": "10.5–12s",
+          "shot": "Wide",
+          "action": "Sofa and ottoman in golden evening light; a pillow tossed onto it.",
+          "text": "—"
+        },
+        {
+          "n": 7,
+          "time": "13.5–15s",
+          "shot": "Wide",
+          "action": "Woman arranges cushions; carries a folded item.",
+          "text": "—"
+        },
+        {
+          "n": 8,
+          "time": "16.5–18s",
+          "shot": "Medium",
+          "action": "Woman reclines with a laptop; person naps with a laptop over their face.",
+          "text": "—"
+        },
+        {
+          "n": 9,
+          "time": "19.5–21s",
+          "shot": "Medium",
+          "action": "Dog lies on the sofa end, then at night.",
+          "text": "—"
+        },
+        {
+          "n": 10,
+          "time": "22.5–27s",
+          "shot": "Medium",
+          "action": "Person under a blanket with the dog; two people and the dog on the sofa.",
+          "text": "—"
+        },
+        {
+          "n": 11,
+          "time": "28.5–33s",
+          "shot": "Medium",
+          "action": "Woman looks up with the dog beside her; kisses the dog; couple shares a snack with the dog.",
+          "text": "—"
+        }
+      ]
+    }
+  ]
+}
