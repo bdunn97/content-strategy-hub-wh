@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hub-preview",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\bdunn.NEWAGE\\OneDrive - NewAge Products\\Desktop\\Claude\\influencer-content\\serve.ps1"],
+      "port": 4324
+    }
+  ]
+}

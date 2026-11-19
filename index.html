@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Influencer Content Hub</title>
+<style>
+  :root{
+    --font:"Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --ink-strong:#0a0a0a; --ink:#242424; --ink-nav:#1a1a1a; --text-2:#6b6b6b;
+    --line:#e0e0e0; --tray-2:#ebebeb; --red:#e22f2e; --surface:#fff;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0}
+  html,body{overflow-x:clip}
+  body{font-family:var(--font);background:var(--surface);color:var(--ink);-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.5}
+  button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+  a{color:inherit;text-decoration:none}
+
+  /* Nav */
+  .nav-bar{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:40px;height:76px;padding:0 40px}
+  .wordmark{text-transform:uppercase;color:var(--ink-strong);white-space:nowrap;font-size:18px;font-weight:700;line-height:1}
+  .wordmark span{color:var(--red)}
+  .tabs{display:flex;gap:32px;height:100%;overflow-x:auto;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{text-transform:uppercase;height:100%;color:var(--ink-nav);white-space:nowrap;display:inline-flex;align-items:center;font-size:14px;font-weight:600;position:relative;transition:color .15s var(--ease)}
+  .tab:hover,.tab.is-active{color:var(--red)}
+  .tab.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--red)}
+  @media (max-width:767px){
+    .nav-bar{flex-direction:column;align-items:flex-start;gap:0;height:auto;padding:16px 16px 0}
+    .wordmark{padding-bottom:12px;font-size:16px}
+    .tabs{width:100%;gap:24px}
+    .tab{height:44px}
+  }
+
+  /* Page */
+  .page{max-width:1280px;margin:0 auto;padding:48px 40px 96px}
+  .page[hidden]{display:none}
+  .page-head{border-bottom:1px solid var(--line);padding-bottom:32px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px}
+  .h1{text-transform:uppercase;color:var(--ink-strong);font-size:40px;font-weight:700;line-height:1.1}
+  .page-sub{color:var(--text-2);font-size:13px;margin-top:8px}
+  .section{border-bottom:1px solid var(--line);padding:40px 0}
+  .section:last-child{border-bottom:none}
+  .section-title{text-transform:uppercase;color:var(--ink-strong);font-size:24px;font-weight:700;line-height:1.15}
+  .section-note{color:var(--text-2);margin-top:6px;font-size:13px}
+  @media (max-width:767px){.page{padding:32px 16px 64px}.h1{font-size:30px}}
+
+  /* Video carousel */
+  .vc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:20px}
+  .vc-arrows{display:flex;gap:2px;flex-shrink:0}
+  .vc-arrow{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--ink);color:var(--ink);transition:background .15s,color .15s}
+  .vc-arrow:hover{background:var(--ink-strong);color:#fff}
+  .vc-arrow:disabled{opacity:.25;pointer-events:none}
+  .vc-track{display:flex;gap:2px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .vc-track::-webkit-scrollbar{display:none}
+  .vc-card{aspect-ratio:9/16;flex:0 0 calc(18.1818% - 1.82px);scroll-snap-align:start;background:var(--tray-2);position:relative;overflow:hidden;padding:0;text-align:left}
+  @media (max-width:1100px){.vc-card{flex-basis:calc(28.5714% - 1.71px)}}
+  @media (max-width:767px){.vc-card{flex-basis:calc(62.5% - 1.25px)}}
+  .vc-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease);pointer-events:none}
+  .vc-card:hover .vc-img{transform:scale(1.04)}
+  .vc-overlay{position:absolute;inset:0;background:linear-gradient(#0000 45%,#0a0a0a40 70%,#0a0a0ab8 100%);transition:background .3s var(--ease)}
+  .vc-card:hover .vc-overlay{background:linear-gradient(#0000002e 0%,#0a0a0a59 60%,#0a0a0ac7 100%)}
+  .vc-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:#ffffffe0;display:flex;align-items:center;justify-content:center;opacity:.75;pointer-events:none;transition:transform .25s var(--ease),opacity .25s}
+  .vc-card:hover .vc-play{opacity:1;transform:translate(-50%,-50%) scale(1.15)}
+  .vc-badge{position:absolute;top:12px;left:12px;background:#0a0a0acc;color:#fff;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:4px 7px}
+  .vc-caption{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-direction:column;gap:2px;color:#fff}
+  .vc-creator{text-transform:uppercase;font-size:11px;font-weight:600}
+  .vc-dish{font-size:14px;font-weight:700;line-height:1.25}
+  .vc-dots{display:flex;justify-content:center;gap:6px;padding-top:24px}
+  .vc-dot{position:relative;width:12px;height:2px;padding:0;background:var(--ink-strong);opacity:.2;transition:width .2s var(--ease),opacity .2s}
+  .vc-dot::after{content:"";position:absolute;inset:-10px -3px}
+  .vc-dot.is-on{opacity:1;width:20px}
+  .is-static .vc-arrows,.is-static .vc-dots{display:none}
+
+  /* Modal */
+  .vc-modal{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:56px 16px 16px}
+  .vc-modal[hidden]{display:none}
+  .vc-backdrop{position:absolute;inset:0;background:#000000eb}
+  .vc-box{position:relative;z-index:1;background:#111;width:min(420px,100%);max-height:100%;display:flex;flex-direction:column}
+  .vc-close{position:absolute;top:-44px;right:0;width:40px;height:40px;color:#fff;opacity:.7;font-size:20px}
+  .vc-close:hover{opacity:1}
+  .vc-video{aspect-ratio:9/16;width:100%;max-height:calc(100vh - 140px);object-fit:contain;background:#000;display:block}
+  .vc-box-foot{display:flex;align-items:center;gap:12px;padding:12px 8px;color:#fff}
+  .vc-box-meta{flex:1;min-width:0;text-align:center;display:flex;flex-direction:column;gap:2px}
+  .vc-count{font-size:11px;opacity:.6}
+  .vc-step{width:40px;height:40px;flex-shrink:0;color:#fff;font-size:26px;line-height:1}
+  .vc-step:disabled{opacity:.2;pointer-events:none}
+
+  .empty{color:var(--text-2);padding:40px 0}
+</style>
+</head>
+<body>
+<header class="nav-bar">
+  <div class="wordmark">Influencer Content <span>Hub</span></div>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#competitor-ads" class="tab" data-tab="competitor-ads">Competitor Ads</a>
+  </nav>
+</header>
+
+<main class="page" id="competitor-ads">
+  <div class="page-head">
+    <div>
+      <h1 class="h1">Competitor Ads</h1>
+      <p class="page-sub" id="ads-summary"></p>
+    </div>
+  </div>
+  <div id="ads-sections"></div>
+</main>
+
+<div class="vc-modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="vc-backdrop" data-close></div>
+  <div class="vc-box">
+    <button class="vc-close" data-close aria-label="Close">&#x2715;</button>
+    <video class="vc-video" id="modal-video" controls playsinline></video>
+    <div class="vc-box-foot">
+      <button class="vc-step" id="modal-prev" aria-label="Previous video">&#x2039;</button>
+      <div class="vc-box-meta">
+        <span class="vc-creator" id="modal-brand"></span>
+        <span class="vc-dish" id="modal-title"></span>
+        <span class="vc-count" id="modal-count"></span>
+      </div>
+      <button class="vc-step" id="modal-next" aria-label="Next video">&#x203A;</button>
+    </div>
+  </div>
+</div>
+
+<script src="videos.js"></script>
+<script>
+(function () {
+  const ROOT = 'Competitor Ads';
+  const data = (window.COMPETITOR_ADS || []).filter(b => b.videos && b.videos.length);
+
+  const chevron = d => `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="${d}"/></svg>`;
+  const playIcon = '<svg width="16" height="16" viewBox="0 0 16 16" fill="#0a0a0a"><polygon points="5,2 14,8 5,14"/></svg>';
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const srcFor = (brand, file) => [ROOT, brand, file].map(encodeURIComponent).join('/');
+
+  // "Cozey 03 Music Only.mp4" -> { title: "Cozey 03", musicOnly: true }
+  function parse(file) {
+    let name = file.replace(/\.[^.]+$/, '');
+    const musicOnly = /music only/i.test(name);
+    name = name.replace(/\s*(sound\s+)?music only\s*/i, ' ').trim();
+    return { title: name, musicOnly };
+  }
+
+  // ---- Render sections ----
+  const total = data.reduce((n, b) => n + b.videos.length, 0);
+  document.getElementById('ads-summary').textContent =
+    `${total} videos across ${data.length} brand${data.length === 1 ? '' : 's'}`;
+
+  const host = document.getElementById('ads-sections');
+  if (!data.length) host.innerHTML = '<p class="empty">No videos found. Add brand folders to "Competitor Ads" and run update-videos.ps1.</p>';
+
+  data.forEach((b, bi) => {
+    const sec = document.createElement('section');
+    sec.className = 'section';
+    sec.innerHTML = `
+      <div class="vc">
+        <div class="vc-head">
+          <div>
+            <h2 class="section-title">${esc(b.brand)}</h2>
+            <p class="section-note">${b.videos.length} video${b.videos.length === 1 ? '' : 's'} · click a video to play</p>
+          </div>
+          <div class="vc-arrows">
+            <button class="vc-arrow" data-dir="-1" aria-label="Previous videos">${chevron('15 18 9 12 15 6')}</button>
+            <button class="vc-arrow" data-dir="1" aria-label="Next videos">${chevron('9 18 15 12 9 6')}</button>
+          </div>
+        </div>
+        <div class="vc-track">
+          ${b.videos.map((f, vi) => {
+            const p = parse(f);
+            return `<button class="vc-card" data-b="${bi}" data-v="${vi}" aria-label="Play: ${esc(b.brand)}, ${esc(p.title)}">
+              <video class="vc-img" muted playsinline preload="metadata" src="${srcFor(b.brand, f)}#t=0.5"></video>
+              <span class="vc-overlay"></span>
+              ${p.musicOnly ? '<span class="vc-badge">Music only</span>' : ''}
+              <span class="vc-play" aria-hidden="true">${playIcon}</span>
+              <span class="vc-caption"><span class="vc-creator">${esc(b.brand)}</span><span class="vc-dish">${esc(p.title)}</span></span>
+            </button>`;
+          }).join('')}
+        </div>
+        <div class="vc-dots"></div>
+      </div>`;
+    host.appendChild(sec);
+    initCarousel(sec.querySelector('.vc'));
+  });
+
+  // ---- Carousel: arrows, dots, scroll state ----
+  function initCarousel(vc) {
+    const track = vc.querySelector('.vc-track');
+    const [prev, next] = vc.querySelectorAll('.vc-arrow');
+    const dotsEl = vc.querySelector('.vc-dots');
+    let pages = 0;
+
+    const pageW = () => track.clientWidth + 2;
+    function build() {
+      const n = Math.max(1, Math.ceil((track.scrollWidth - 2) / pageW() - 0.01));
+      vc.classList.toggle('is-static', n <= 1);
+      if (n !== pages) {
+        pages = n;
+        dotsEl.innerHTML = Array.from({ length: n }, (_, i) =>
+          `<button class="vc-dot" aria-label="Page ${i + 1}" data-p="${i}"></button>`).join('');
+      }
+      update();
+    }
+    function update() {
+      const max = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max - 2;
+      const cur = track.scrollLeft >= max - 2 ? pages - 1 : Math.round(track.scrollLeft / pageW());
+      dotsEl.querySelectorAll('.vc-dot').forEach((d, i) => d.classList.toggle('is-on', i === cur));
+    }
+    vc.querySelectorAll('.vc-arrow').forEach(a => a.addEventListener('click', () =>
+      track.scrollBy({ left: +a.dataset.dir * pageW(), behavior: 'smooth' })));
+    dotsEl.addEventListener('click', e => {
+      const d = e.target.closest('.vc-dot');
+      if (d) track.scrollTo({ left: +d.dataset.p * pageW(), behavior: 'smooth' });
+    });
+    track.addEventListener('scroll', update, { passive: true });
+    new ResizeObserver(build).observe(track);
+  }
+
+  // ---- Hover preview (muted) ----
+  host.addEventListener('mouseover', e => {
+    const card = e.target.closest('.vc-card');
+    if (!card || card.contains(e.relatedTarget)) return;
+    const v = card.querySelector('video');
+    v.play().catch(() => {});
+  });
+  host.addEventListener('mouseout', e => {
+    const card = e.target.closest('.vc-card');
+    if (!card || card.contains(e.relatedTarget)) return;
+    const v = card.querySelector('video');
+    v.pause(); v.currentTime = 0.5;
+  });
+
+  // ---- Modal player ----
+  const modal = document.getElementById('modal');
+  const mv = document.getElementById('modal-video');
+  const mPrev = document.getElementById('modal-prev');
+  const mNext = document.getElementById('modal-next');
+  let cur = null, lastFocus = null;
+
+  function show(bi, vi) {
+    const b = data[bi], f = b.videos[vi], p = parse(f);
+    cur = { bi, vi };
+    mv.src = srcFor(b.brand, f);
+    mv.play().catch(() => {});
+    document.getElementById('modal-brand').textContent = b.brand;
+    document.getElementById('modal-title').textContent = p.title + (p.musicOnly ? ' · Music only' : '');
+    document.getElementById('modal-count').textContent = `${vi + 1} / ${b.videos.length}`;
+    mPrev.disabled = vi === 0;
+    mNext.disabled = vi === b.videos.length - 1;
+  }
+  function open(bi, vi) {
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    show(bi, vi);
+    modal.querySelector('.vc-close').focus();
+  }
+  function close() {
+    mv.pause(); mv.removeAttribute('src'); mv.load();
+    modal.hidden = true; cur = null;
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  const step = d => {
+    if (!cur) return;
+    const n = cur.vi + d;
+    if (n >= 0 && n < data[cur.bi].videos.length) show(cur.bi, n);
+  };
+
+  host.addEventListener('click', e => {
+    const card = e.target.closest('.vc-card');
+    if (card) open(+card.dataset.b, +card.dataset.v);
+  });
+  modal.addEventListener('click', e => { if (e.target.closest('[data-close]')) close(); });
+  mPrev.addEventListener('click', () => step(-1));
+  mNext.addEventListener('click', () => step(1));
+  mv.addEventListener('ended', () => step(1));
+  document.addEventListener('keydown', e => {
+    if (modal.hidden) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') step(-1);
+    else if (e.key === 'ArrowRight') step(1);
+  });
+
+  // ---- Tabs (hash routing; add more <main class="page"> + tab links later) ----
+  function route() {
+    const pages = [...document.querySelectorAll('main.page')];
+    const id = location.hash.slice(1);
+    const target = pages.find(p => p.id === id) || pages[0];
+    pages.forEach(p => p.hidden = p !== target);
+    document.querySelectorAll('.tab').forEach(t => {
+      const on = t.dataset.tab === target.id;
+      t.classList.toggle('is-active', on);
+      on ? t.setAttribute('aria-current', 'page') : t.removeAttribute('aria-current');
+    });
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', route);
+  route();
+})();
+</script>
+</body>
+</html>
