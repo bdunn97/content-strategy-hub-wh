@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Influencer Content Hub</title>
+<title>Wilder Home Creator Content Strategy</title>
 <style>
   :root{
     --font:"Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -21,17 +21,43 @@
   .nav-bar{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:40px;height:76px;padding:0 40px}
   .wordmark{text-transform:uppercase;color:var(--ink-strong);white-space:nowrap;font-size:18px;font-weight:700;line-height:1}
   .wordmark span{color:var(--red)}
-  .tabs{display:flex;gap:32px;height:100%;overflow-x:auto;scrollbar-width:none}
-  .tabs::-webkit-scrollbar{display:none}
-  .tab{text-transform:uppercase;height:100%;color:var(--ink-nav);white-space:nowrap;display:inline-flex;align-items:center;font-size:14px;font-weight:600;position:relative;transition:color .15s var(--ease)}
-  .tab:hover,.tab.is-active{color:var(--red)}
+  .logo{display:flex;align-items:center;flex-shrink:0}
+  .logo img{height:34px;width:auto;display:block}
+  .tabs{display:flex;gap:32px;height:100%}
+  .tab{text-transform:uppercase;height:100%;color:var(--ink-nav);white-space:nowrap;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;position:relative;transition:color .15s var(--ease)}
+  .tab:hover,.tab.is-active,.tab[aria-expanded="true"]{color:var(--red)}
   .tab.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--red)}
-  @media (max-width:767px){
-    .nav-bar{flex-direction:column;align-items:flex-start;gap:0;height:auto;padding:16px 16px 0}
-    .wordmark{padding-bottom:12px;font-size:16px}
-    .tabs{width:100%;gap:24px}
+  .tab-chev{transition:transform .2s var(--ease)}
+  .tab[aria-expanded="true"] .tab-chev{transform:rotate(180deg)}
+
+  /* Dropdown menus */
+  .drop{position:relative;display:flex;height:100%}
+  .menu{position:absolute;top:100%;left:-16px;min-width:200px;margin-top:1px;padding:6px 0;background:var(--surface);border:1px solid var(--line);box-shadow:0 12px 28px #0a0a0a1f;display:flex;flex-direction:column;z-index:60}
+  .menu[hidden]{display:none}
+  .menu a{padding:11px 16px;font-size:13px;font-weight:600;text-transform:uppercase;color:var(--ink-nav);white-space:nowrap;transition:color .15s var(--ease),background .15s}
+  .menu a:hover,.menu a:focus-visible{color:var(--red);background:#fafafa;outline:none}
+  .menu a[aria-current="page"]{color:var(--red)}
+
+  /* Narrower screens: logo on its own row, tabs wrap below (as on the Content Marketing Hub) */
+  @media (max-width:1100px){
+    .nav-bar{flex-direction:column;align-items:flex-start;gap:0;height:auto;padding:16px 40px 0}
+    .logo{padding-bottom:12px}
+    .tabs{flex-wrap:wrap;gap:0 28px;width:100%;height:auto}
     .tab{height:44px}
+    .drop{height:auto}
   }
+  @media (max-width:767px){
+    .nav-bar{padding:16px 16px 0}
+    .logo img{height:28px}
+    .tabs{gap:0 22px}
+    .menu{left:0}
+  }
+
+  /* Empty sections waiting for content */
+  .placeholder{margin-top:40px;border:1px dashed var(--line);background:#fafafa;padding:56px 24px;text-align:center}
+  .placeholder-title{text-transform:uppercase;color:var(--ink-strong);font-size:13px;font-weight:700;letter-spacing:.04em}
+  .placeholder-note{color:var(--text-2);font-size:13px;margin-top:6px}
+  .eyebrow{display:block;text-transform:uppercase;color:var(--red);font-size:12px;font-weight:700;letter-spacing:.06em;margin-bottom:10px}
 
   /* Page */
   .page{max-width:1280px;margin:0 auto;padding:48px 40px 96px}
@@ -91,20 +117,78 @@
 </head>
 <body>
 <header class="nav-bar">
-  <div class="wordmark">Influencer Content <span>Hub</span></div>
+  <a href="#" class="logo"><img src="assets/wilder-home-logo.png" alt="Wilder Home" width="1768" height="1049"></a>
   <nav class="tabs" aria-label="Sections">
-    <a href="#competitor-ads" class="tab" data-tab="competitor-ads">Competitor Ads</a>
+    <div class="drop">
+      <button type="button" class="tab" aria-expanded="false" aria-haspopup="true" aria-controls="menu-analysis" data-pages="ad-library organic-content">Competitor Analysis <svg class="tab-chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="menu" id="menu-analysis" hidden>
+        <a href="#ad-library" data-tab="ad-library">Ad Library</a>
+        <a href="#organic-content" data-tab="organic-content">Organic Content</a>
+      </div>
+    </div>
+    <div class="drop">
+      <button type="button" class="tab" aria-expanded="false" aria-haspopup="true" aria-controls="menu-creative" data-pages="creative-brief scripts">Creative <svg class="tab-chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="menu" id="menu-creative" hidden>
+        <a href="#creative-brief" data-tab="creative-brief">Creative Brief</a>
+        <a href="#scripts" data-tab="scripts">Scripts</a>
+      </div>
+    </div>
+    <div class="drop">
+      <button type="button" class="tab" aria-expanded="false" aria-haspopup="true" aria-controls="menu-creators" data-pages="potential-creators signed-creators">Creators <svg class="tab-chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="menu" id="menu-creators" hidden>
+        <a href="#potential-creators" data-tab="potential-creators">Potential</a>
+        <a href="#signed-creators" data-tab="signed-creators">Signed</a>
+      </div>
+    </div>
+    <a href="#content-calendar" class="tab" data-tab="content-calendar">Content Calendar</a>
+    <a href="#strategy" class="tab" data-tab="strategy">Strategy</a>
   </nav>
 </header>
 
-<main class="page" id="competitor-ads">
+<main class="page" id="ad-library">
   <div class="page-head">
     <div>
-      <h1 class="h1">Competitor Ads</h1>
+      <span class="eyebrow">Competitor Analysis</span>
+      <h1 class="h1">Ad Library</h1>
       <p class="page-sub" id="ads-summary"></p>
     </div>
   </div>
   <div id="ads-sections"></div>
+</main>
+
+<main class="page" id="potential-creators" hidden>
+  <div class="page-head"><div><span class="eyebrow">Creators</span><h1 class="h1">Potential Creators</h1></div></div>
+  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">Creators being considered for Wilder Home will go here.</p></div>
+</main>
+
+<main class="page" id="creative-brief" hidden>
+  <div class="page-head"><div><span class="eyebrow">Creative</span><h1 class="h1">Creative Brief</h1></div></div>
+  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">The creative brief for creators will go here.</p></div>
+</main>
+
+<main class="page" id="scripts" hidden>
+  <div class="page-head"><div><span class="eyebrow">Creative</span><h1 class="h1">Scripts</h1></div></div>
+  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">Video scripts and talking points will go here.</p></div>
+</main>
+
+<main class="page" id="strategy" hidden>
+  <div class="page-head"><div><h1 class="h1">Strategy</h1></div></div>
+  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">The creator content strategy will go here.</p></div>
+</main>
+
+<main class="page" id="content-calendar" hidden>
+  <div class="page-head"><div><h1 class="h1">Content Calendar</h1></div></div>
+  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">Planned posting and delivery dates will go here.</p></div>
+</main>
+
+<main class="page" id="signed-creators" hidden>
+  <div class="page-head"><div><span class="eyebrow">Creators</span><h1 class="h1">Signed Creators</h1></div></div>
+  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">Creators under contract with Wilder Home will go here.</p></div>
+</main>
+
+<main class="page" id="organic-content" hidden>
+  <div class="page-head"><div><span class="eyebrow">Competitor Analysis</span><h1 class="h1">Organic Content</h1></div></div>
+  <div class="placeholder"><p class="placeholder-title">No content yet</p><p class="placeholder-note">Competitor organic social posts will go here.</p></div>
 </main>
 
 <div class="vc-modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Video player">
@@ -285,17 +369,44 @@
     else if (e.key === 'ArrowRight') step(1);
   });
 
-  // ---- Tabs (hash routing; add more <main class="page"> + tab links later) ----
+  // ---- Dropdown menus ----
+  const drops = [...document.querySelectorAll('.drop')];
+  function closeMenus(except) {
+    drops.forEach(d => {
+      if (d === except) return;
+      d.querySelector('button').setAttribute('aria-expanded', 'false');
+      d.querySelector('.menu').hidden = true;
+    });
+  }
+  drops.forEach(d => {
+    const btn = d.querySelector('button'), menu = d.querySelector('.menu');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      closeMenus(d);
+      btn.setAttribute('aria-expanded', String(open));
+      menu.hidden = !open;
+    });
+  });
+  document.addEventListener('click', e => { if (!e.target.closest('.drop')) closeMenus(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.hidden) closeMenus(); });
+
+  // ---- Tabs (hash routing: each <main class="page" id="x"> is shown at #x) ----
   function route() {
     const pages = [...document.querySelectorAll('main.page')];
-    const id = location.hash.slice(1);
+    const aliases = { 'competitor-ads': 'ad-library', 'strategy-proposal': 'strategy' }; // old links keep working
+    const raw = location.hash.slice(1), id = aliases[raw] || raw;
     const target = pages.find(p => p.id === id) || pages[0];
     pages.forEach(p => p.hidden = p !== target);
-    document.querySelectorAll('.tab').forEach(t => {
+    document.querySelectorAll('.tabs a[data-tab]').forEach(t => {
       const on = t.dataset.tab === target.id;
-      t.classList.toggle('is-active', on);
+      t.classList.toggle('is-active', on && t.classList.contains('tab'));
       on ? t.setAttribute('aria-current', 'page') : t.removeAttribute('aria-current');
     });
+    drops.forEach(d => {
+      const btn = d.querySelector('button');
+      btn.classList.toggle('is-active', btn.dataset.pages.split(' ').includes(target.id));
+    });
+    closeMenus();
     window.scrollTo(0, 0);
   }
   window.addEventListener('hashchange', route);
