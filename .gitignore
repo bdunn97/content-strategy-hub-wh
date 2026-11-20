@@ -5,3 +5,4 @@ Thumbs.db
 ~$*
 .netlify/
 .claude/settings.local.json
+*.docx

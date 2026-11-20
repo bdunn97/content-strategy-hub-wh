@@ -1,0 +1,238 @@
+{
+    "title":  "Wilder Home Ads",
+    "source":  "Wilder Home Ad Concepts.docx",
+    "updated":  "2026-11-20T09:37:17",
+    "concepts":  [
+                     {
+                         "n":  1,
+                         "title":  "A Hangout Spot for Your Entire Family",
+                         "meta":  {
+                                      "Vibe":  "Upbeat, voiceover content, showing Wilder Home in a real use case.",
+                                      "Good for":  "targeting the family audience demographic.",
+                                      "Length":  "30s."
+                                  },
+                         "sections":  [
+                                          {
+                                              "label":  "Suggested Visual Moments",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Kids, pets, and family all sitting on/using the sofa.",
+                                                            "Unboxing and moving sofa into place in living room.",
+                                                            "Creator sinks into it, picks up kid and invites pets onto couch.",
+                                                            "Close-up shots of pet on sofa, showcasing the material.",
+                                                            "Wide shot of sofa in living room showing how the design fit nicely with the home.",
+                                                            "Family moment on the couch – everyone watching a movie or reading a kids book while the pets are cuddled up."
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Suggested Talking Points / Script",
+                                              "text":  "",
+                                              "items":  [
+                                                            "A light-colored sofa with pets and little hands around probably sounds like a terrible idea.",
+                                                            "But hear me out – this is our new sofa from Wilder Home, and I feel like it gives me the best of both worlds.",
+                                                            "It’s pet-friendly, durable, and comfortable, but still looks beautiful in our home.",
+                                                            "And the best part is that the covers use ClawStop™ technology that’s scratch and puncture resistant, and they’re completely removable and washable.",
+                                                            "Plus, it comes with the Wild Guarantee™, five years of protection, including accidental pet damage.",
+                                                            "So now we have a sofa where nothing is off-limits - pets, kids, and anything else."
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Content Example(s)",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Cozey 06"
+                                                        ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "n":  2,
+                         "title":  "A Day in the Life",
+                         "meta":  {
+                                      "Vibe":  "quiet, observational. A normal day, filmed in pieces as it happens. Ambient sound or soft music, timestamped moments.",
+                                      "Good for":  "targeting pet owners that can relate to spending day-to-day moments with their pets being comfortable in their home.",
+                                      "Length":  "20–30s."
+                                  },
+                         "sections":  [
+                                          {
+                                              "label":  "Suggested Visual Moments",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Morning coffee on the couch, inviting dog to come up.",
+                                                            "Work-from-sofa, pet next to or on creator.",
+                                                            "Take dog for a walk, upon return, the dog jumps on the couch getting prints on it, creating a small mess.",
+                                                            "Laundry, removing couch covers.",
+                                                            "Evening: movie or reading, blanket, pet curled up."
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Suggested Text overlay",
+                                              "text":  "timestamps from each moment captured throughout the day.",
+                                              "items":  [
+
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Content Examples",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Rove Lab 03 Sound Music Only",
+                                                            "Joybird 01 Music Only"
+                                                        ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "n":  3,
+                         "title":  "Product Features",
+                         "meta":  {
+                                      "Vibe":  "relaxing, no voiceover, day-to-day moments but more “ad-like” to highlight specific product features.",
+                                      "Good for":  "showing how Wilder Home stands out against competitors",
+                                      "Length":  "15–20s."
+                                  },
+                         "sections":  [
+                                          {
+                                              "label":  "Suggested Visual Moments",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Quick cuts of moments on the couch with pet(s).",
+                                                            "Close-up of fabric, cat kneading the sofa or dog jumping up onto sofa.",
+                                                            "Pouring water onto sofa to showcase it being liquid repellent.",
+                                                            "Taking covers off, putting them into the washing machine.",
+                                                            "Wide shot of sofa in living room.",
+                                                            "Shots of day-to-day life on the sofa: reading, watching a show/movie, working on laptop, etc., all moments with pet next to you."
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Text Overlay Only (no VO)",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Upgrading our living room with Wilder Home",
+                                                            "The Ridgeback 4pc Sofa",
+                                                            "Scratch, stain, \u0026 puncture resistant",
+                                                            "Liquid-repellent",
+                                                            "Machine washable covers",
+                                                            "Beautiful enough to be in our home",
+                                                            "Comfortable enough to live on",
+                                                            "And durable enough for the entire family",
+                                                            "My living room has never felt so cozy and elevated"
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Content Example",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Cozey 04 Music only"
+                                                        ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "n":  5,
+                         "title":  "We Wanted a Space We Could Actually Get Comfortable On",
+                         "meta":  {
+                                      "Vibe":  "talking directly to camera, informative, cute because it’s referencing that the dog is the main decision-maker",
+                                      "Good for":  "using an existing competitor ad for inspiration and A/B testing.",
+                                      "Length":  "20-30s."
+                                  },
+                         "sections":  [
+                                          {
+                                              "label":  "Visual Moments",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Dog and owner sitting on the sofa together",
+                                                            "Talking to camera with mini mic",
+                                                            "Showing the dog on couch, playing, sleeping, cuddling, etc.",
+                                                            "Showing the couch in the living room"
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Talking Points",
+                                              "text":  "",
+                                              "items":  [
+                                                            "We wanted a sofa we could actually get comfortable on",
+                                                            "And by ‘we’ I mean her",
+                                                            "So, we landed on the Ridgeback sofa from Wilder Home",
+                                                            "Their sofas and sectionals are made specifically with pets in mind",
+                                                            "It’s soft, comfortable, and durable",
+                                                            "Plus, the covers are washable, keeping the couch clean even through every season",
+                                                            "Wilder Home is for the inevitable: mud, spills, and long Sunday naps",
+                                                            "Now the best part, the couch test",
+                                                            "I say she approves!"
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Content Example",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Cozey 08"
+                                                        ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "n":  6,
+                         "title":  "You Don’t Have to Choose",
+                         "meta":  {
+                                      "Vibe":  "X",
+                                      "Good for":  "",
+                                      "Length":  ""
+                                  },
+                         "sections":  [
+                                          {
+                                              "label":  "Visual Moments",
+                                              "text":  "",
+                                              "items":  [
+                                                            "X"
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Text Overlay Only",
+                                              "text":  "“POV: You love your pets, but you also love having nice things.”",
+                                              "items":  [
+
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Content Example",
+                                              "text":  "",
+                                              "items":  [
+                                                            "Cozey 07 Music Only"
+                                                        ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "n":  4,
+                         "title":  "There’s No Standard For Pet Friendly",
+                         "meta":  {
+                                      "Vibe":  "X",
+                                      "Good for":  "X",
+                                      "Length":  "25–35s."
+                                  },
+                         "sections":  [
+                                          {
+                                              "label":  "Visual Moments",
+                                              "text":  "",
+                                              "items":  [
+                                                            "X"
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Talking Points",
+                                              "text":  "",
+                                              "items":  [
+                                                            "X"
+                                                        ]
+                                          },
+                                          {
+                                              "label":  "Content Example",
+                                              "text":  "",
+                                              "items":  [
+                                                            "TBD"
+                                                        ]
+                                          }
+                                      ]
+                     }
+                 ]
+}
