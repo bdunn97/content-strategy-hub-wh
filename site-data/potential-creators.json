@@ -1,7 +1,7 @@
 {
     "title":  "Wilder Home Potential Creators",
     "source":  "Wilder Home Potential Influencers.xlsx",
-    "updated":  "2026-11-17T12:25:09",
+    "updated":  "2026-11-23T08:45:13",
     "columns":  [
                     "Name",
                     "URL - IG",
@@ -119,6 +119,33 @@
                      "Followers - TT":  "",
                      "Niche":  "Outdoor adventures, dogs, travel",
                      "Notes":  "Toyota partner, more cinematic content"
+                 },
+                 {
+                     "Name":  "Blake Swingle",
+                     "URL - IG":  "https://www.instagram.com/blakejswingle",
+                     "URL - TT":  "",
+                     "Followes - IG":  "10.5K",
+                     "Followers - TT":  "",
+                     "Niche":  "Travel, photography, dirtbike/motorcycle",
+                     "Notes":  ""
+                 },
+                 {
+                     "Name":  "Caziah Franklin",
+                     "URL - IG":  "https://www.instagram.com/caziahfranklin/",
+                     "URL - TT":  "",
+                     "Followes - IG":  "130K",
+                     "Followers - TT":  "",
+                     "Niche":  "Outdoor adventures, camping, offroading",
+                     "Notes":  "Ford ambassador, his wife is pregnant, could also be good for NAP"
+                 },
+                 {
+                     "Name":  "Carson Pottinger",
+                     "URL - IG":  "https://www.instagram.com/carson.pottenger",
+                     "URL - TT":  "",
+                     "Followes - IG":  "70.2K",
+                     "Followers - TT":  "",
+                     "Niche":  "Religious, yellow lab, country lifestyle",
+                     "Notes":  ""
                  }
              ]
 }

@@ -6,6 +6,7 @@
 #   Source : full path to the .xlsx
 #   Sheet  : worksheet (tab) name; leave '' for the first sheet
 #   Out    : JSON file the page reads
+#   Exclude: optional list of column headers to leave out of the JSON (never published)
 # The header row is found automatically (the first row with 3+ filled cells). Rows above it
 # (e.g. a title in A1) become "title". Every row below it becomes one record keyed by header text.
 
@@ -14,6 +15,8 @@ $Sources = @(
     Source = 'C:\Users\bdunn.NEWAGE\OneDrive - NewAge Products\Desktop\Wilder Home\Influencer\Wilder Home Potential Influencers.xlsx'
     Sheet  = ''
     Out    = 'site-data/potential-creators.json'
+    # Columns kept off the site (the site and repo are public). Matched by header text.
+    Exclude = @('Email')
   }
 )
 
@@ -68,7 +71,10 @@ function Read-Sheet([string]$path, [string]$sheetName) {
         $v = if ($c.t -eq 's') { $shared[[int]$c.v] } elseif ($c.t -eq 'inlineStr') { $c.is.InnerText } else { [string]$c.v }
         if ($null -eq $v) { $v = '' }
         $v = ([string]$v).Trim()
-        if ($links.ContainsKey($c.r) -and $v -notmatch '^https?://') { $v = $links[$c.r] }
+        if ($links.ContainsKey($c.r) -and $v -notmatch '^https?://') {
+          $link = $links[$c.r] -replace '^mailto:', ''   # email links: keep just the address
+          if (-not ($v -match '@' -and $link -match '@')) { $v = $link }
+        }
         if ($v -ne '') { $cells[(ColIndex $c.r)] = $v }
       }
       $rows += , $cells
@@ -87,7 +93,8 @@ foreach ($src in $Sources) {
 
   $title = (@($rows[0..([Math]::Max(0, $hi - 1))] | Where-Object { $_.Count -gt 0 } | ForEach-Object { $_.Values }) | Select-Object -First 1)
   $header = $rows[$hi]
-  $cols = @($header.Keys | Sort-Object)
+  $exclude = @($src.Exclude | Where-Object { $_ } | ForEach-Object { $_.ToLower().Trim() })
+  $cols = @($header.Keys | Sort-Object | Where-Object { $exclude -notcontains $header[$_].ToLower().Trim() })
   $columns = @($cols | ForEach-Object { $header[$_] })
 
   $records = @()

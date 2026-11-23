@@ -6,7 +6,9 @@ UGC content work.
 Hosted on Netlify and deployed from the GitHub repo `bdunn97/content-strategy-hub-wh`: every push
 to `main` redeploys the live site.
 
-- Live site: https://content-strategy-hub-wh.netlify.app/
+- Live site: https://content-strategy-hub-wh.netlify.app/ (Netlify; paused while out of credits)
+- Also live on GitHub Pages: https://bdunn97.github.io/content-strategy-hub-wh/ (free; updates on
+  every push to `main`, root folder). Use this one to check a publish while Netlify is paused.
 - Local preview: http://localhost:4324 (`.claude/launch.json` "hub-preview", or `Start Hub.bat`) Layout and styling mirror the Content Marketing Hub
 (sticky tab bar, uppercase headings, red accent, 9:16 video carousels with a pop-up player).
 
@@ -72,6 +74,8 @@ from my spreadsheet" / "sync my creators")
   so column order can change. A brand-new column shows up as an extra table column automatically.
   If a header is renamed so it no longer matches, update `COLS` in index.html.
 - The live site and GitHub repo are viewable by others: everything in a synced column is published.
+  The spreadsheet's Email column is left out via `Exclude` in `$Sources` (sync-sheets.ps1); add
+  any other private column there. Only remove Email from `Exclude` if the user asks.
 
 **Update Scripts from the ad concepts doc** ("update the scripts" / "sync my ad concepts")
 1. Run `powershell -ExecutionPolicy Bypass -File .\sync-docs.ps1`.

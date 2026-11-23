@@ -487,7 +487,9 @@
       return seg ? '@' + seg.replace(/^@/, '') : 'Profile';
     } catch { return 'Profile'; }
   }
-  const linkify = s => esc(s).replace(/https?:\/\/[^\s<]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
+  const linkify = s => esc(s)
+    .replace(/https?:\/\/[^\s<]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`)
+    .replace(/(^|[\s(])([\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g, '$1<a href="mailto:$2">$2</a>');
   function socialCell(url, count) {
     if (!url && !count) return '<span class="ct-none">—</span>';
     const link = url ? `<a class="ct-handle" href="${esc(url)}" target="_blank" rel="noopener">${esc(handleFrom(url))}</a>` : '';
