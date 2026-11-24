@@ -74,8 +74,13 @@ from my spreadsheet" / "sync my creators")
   so column order can change. A brand-new column shows up as an extra table column automatically.
   If a header is renamed so it no longer matches, update `COLS` in index.html.
 - The live site and GitHub repo are viewable by others: everything in a synced column is published.
-  The spreadsheet's Email column is left out via `Exclude` in `$Sources` (sync-sheets.ps1); add
-  any other private column there. Only remove Email from `Exclude` if the user asks.
+  The spreadsheet's Email, Notes and Status columns are left out via `Exclude` in `$Sources`
+  (sync-sheets.ps1); the color-coded stage tags replaced Notes/Status. Add any other private
+  column there. Only remove a column from `Exclude` if the user asks.
+- Sheet layout: row 1 title, row 2 a color key (Expressed Interest / Not Interested / No response
+  yet; each label's cell fill = the row color the user uses), row 3 headers ("Name" marks the
+  header row). Each creator's stage comes from its row's fill color matched to the key
+  (`_stage` in the JSON, shown as a colored tag under the name, counts in the page subtitle).
 
 **Update Scripts from the ad concepts doc** ("update the scripts" / "sync my ad concepts")
 1. Run `powershell -ExecutionPolicy Bypass -File .\sync-docs.ps1`.

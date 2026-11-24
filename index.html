@@ -109,7 +109,7 @@
 
   /* Creator tables (data from the local spreadsheets via sync-sheets.ps1) */
   .ct-wrap{margin-top:32px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line)}
-  .ct{border-collapse:collapse;width:100%;min-width:900px;font-size:13px;line-height:1.5}
+  .ct{border-collapse:collapse;width:100%;min-width:640px;font-size:13px;line-height:1.5}
   .ct th{text-align:left;text-transform:uppercase;font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--text-2);background:#fafafa;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
   .ct td{padding:14px;border-bottom:1px solid #f0f0f0;vertical-align:top;color:var(--ink)}
   .ct tbody tr:last-child td{border-bottom:none}
@@ -120,6 +120,11 @@
   .ct-handle:hover{color:var(--red);text-decoration-color:var(--red)}
   .ct-count{display:block;font-weight:700;color:var(--ink-strong);font-variant-numeric:tabular-nums}
   .ct-none{color:#c4c4c4}
+  .ct-extra{min-width:150px}
+  .ct-stage{display:block;width:max-content;margin-top:6px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 7px}
+  .ct-stage-yes{background:#e6f2e8;color:#256b37}
+  .ct-stage-no{background:#fbe9e9;color:#b3261e}
+  .ct-stage-wait{background:#f2f2f2;color:var(--text-2)}
   .ct-chips{display:flex;flex-wrap:wrap;gap:4px;min-width:160px}
   .ct-chip{background:#f2f2f2;color:var(--ink);font-size:11.5px;padding:2px 8px;white-space:nowrap}
   .ct-notes{white-space:pre-line;color:var(--text-2);min-width:220px;max-width:360px}
@@ -491,6 +496,7 @@
     .replace(/https?:\/\/[^\s<]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`)
     .replace(/(^|[\s(])([\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g, '$1<a href="mailto:$2">$2</a>');
   function socialCell(url, count) {
+    if (!/^https?:\/\//i.test(url)) url = ''; // ignore stray characters typed in a URL cell
     if (!url && !count) return '<span class="ct-none">—</span>';
     const link = url ? `<a class="ct-handle" href="${esc(url)}" target="_blank" rel="noopener">${esc(handleFrom(url))}</a>` : '';
     return `${count ? `<span class="ct-count">${esc(count)}</span>` : ''}${link}`;
@@ -502,19 +508,24 @@
     const extra = cols.filter(c => !Object.values(map).includes(c)); // any new columns still show
     const get = (r, k) => (map[k] && r[map[k]]) || '';
     const updated = json.updated ? new Date(json.updated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+    // Stages come from the spreadsheet's color key (row colors), e.g. Expressed Interest / No response yet
+    const stages = (json.stages || []).filter(s => rows.some(r => r._stage === s));
+    const counts = stages.map(s => `${rows.filter(r => r._stage === s).length} ${s.toLowerCase()}`);
     document.getElementById(summaryId).textContent =
-      `${rows.length} creator${rows.length === 1 ? '' : 's'}${updated ? ` · spreadsheet last saved ${updated}` : ''}`;
+      `${rows.length} creator${rows.length === 1 ? '' : 's'}${counts.length ? ` · ${counts.join(' · ')}` : ''}${updated ? ` · spreadsheet last saved ${updated}` : ''}`;
     if (!rows.length) {
       document.getElementById(bodyId).innerHTML = '<div class="placeholder"><p class="placeholder-title">No creators yet</p><p class="placeholder-note">Add rows to the spreadsheet, then ask Claude to update the site.</p></div>';
       return;
     }
+    const hasStage = rows.some(r => r._stage);
+    const stageTone = s => /not/i.test(s) ? 'no' : /interest|yes|signed|confirm/i.test(s) ? 'yes' : 'wait';
     const body = rows.map(r => `<tr>
-        <td class="ct-name">${esc(get(r, 'name'))}</td>
+        <td class="ct-name">${esc(get(r, 'name'))}${hasStage && r._stage ? `<span class="ct-stage ct-stage-${stageTone(r._stage)}">${esc(r._stage)}</span>` : ''}</td>
         <td class="ct-social">${socialCell(get(r, 'igUrl'), get(r, 'igF'))}</td>
         <td class="ct-social">${socialCell(get(r, 'ttUrl'), get(r, 'ttF'))}</td>
         <td><div class="ct-chips">${get(r, 'niche').split(',').map(s => s.trim()).filter(Boolean).map(s => `<span class="ct-chip">${esc(s)}</span>`).join('')}</div></td>
         ${map.notes ? `<td class="ct-notes">${linkify(get(r, 'notes'))}</td>` : ''}
-        ${extra.map(c => `<td>${linkify(r[c] || '')}</td>`).join('')}
+        ${extra.map(c => `<td class="ct-extra">${linkify(r[c] || '')}</td>`).join('')}
       </tr>`).join('');
     document.getElementById(bodyId).innerHTML = `<div class="ct-wrap"><table class="ct">
       <thead><tr><th>Creator</th><th>Instagram</th><th>TikTok</th><th>Niche</th>${map.notes ? '<th>Notes</th>' : ''}${extra.map(c => `<th>${esc(c)}</th>`).join('')}</tr></thead>

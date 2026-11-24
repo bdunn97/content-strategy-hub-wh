@@ -1,15 +1,19 @@
 {
     "title":  "Wilder Home Potential Creators",
+    "stages":  [
+                   "Expressed Interest",
+                   "Not Interested",
+                   "No response yet"
+               ],
     "source":  "Wilder Home Potential Influencers.xlsx",
-    "updated":  "2026-11-23T09:02:47",
+    "updated":  "2026-11-24T14:24:34",
     "columns":  [
                     "Name",
                     "URL - IG",
                     "URL - TT",
                     "Followes - IG",
                     "Followers - TT",
-                    "Niche",
-                    "Notes"
+                    "Niche"
                 ],
     "rows":  [
                  {
@@ -19,16 +23,16 @@
                      "Followes - IG":  "55.3K",
                      "Followers - TT":  "89.1K",
                      "Niche":  "MT Lifestyle, fashion",
-                     "Notes":  "Local to Bozeman"
+                     "_stage":  "No response yet"
                  },
                  {
                      "Name":  "Georgia Ordway",
                      "URL - IG":  "https://www.instagram.com/georgiaordway/?hl=en",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "57.3K",
                      "Followers - TT":  "40.9K",
                      "Niche":  "MT lifestyle, pets, outdoors, horses",
-                     "Notes":  "Worked with her several times in the past, her content performs super well over paid"
+                     "_stage":  "No response yet"
                  },
                  {
                      "Name":  "Lily Chugg",
@@ -37,25 +41,25 @@
                      "Followes - IG":  "35.3K",
                      "Followers - TT":  "28.7K",
                      "Niche":  "Golden retreivers, farm, MT",
-                     "Notes":  "DITL series \"living in bozeman, montana married with two goldens \u0026 horses\""
+                     "_stage":  "No response yet"
                  },
                  {
                      "Name":  "Bryce LaDuc",
                      "URL - IG":  "https://www.instagram.com/laducb/",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "110K",
                      "Followers - TT":  "",
                      "Niche":  "Boarder collies, outdoor dog adventures \u0026 travel",
-                     "Notes":  "Dogs on couch content: https://www.instagram.com/p/Dez5tkryIfO/\n\nRuffwear ambassador"
+                     "_stage":  "Expressed Interest"
                  },
                  {
                      "Name":  "Carmany Chambers",
                      "URL - IG":  "https://www.instagram.com/callmecarm/",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "26.7K",
                      "Followers - TT":  "",
                      "Niche":  "Subaru car camping, outdoor adventures with dogs",
-                     "Notes":  "Ruffwear ambassador"
+                     "_stage":  "Expressed Interest"
                  },
                  {
                      "Name":  "Jordan Kahana",
@@ -64,16 +68,16 @@
                      "Followes - IG":  "216K",
                      "Followers - TT":  "143K",
                      "Niche":  "Outdoor adventures, dogs, travel",
-                     "Notes":  ""
+                     "_stage":  "Expressed Interest"
                  },
                  {
                      "Name":  "Brianna Madia",
                      "URL - IG":  "https://www.instagram.com/briannamadia/",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "344K",
                      "Followers - TT":  "",
                      "Niche":  "Childfree living, outdoor adventures w dogs",
-                     "Notes":  "Content is less polished but I like her. Child free and has like 5+ dogs. 3x NYT best selling author."
+                     "_stage":  "No response yet"
                  },
                  {
                      "Name":  "Laurel Ysebaert",
@@ -82,25 +86,25 @@
                      "Followes - IG":  "852K",
                      "Followers - TT":  "557K",
                      "Niche":  "Family, farm, animals, western fashion",
-                     "Notes":  "Also has 483K on FB: https://www.facebook.com/ysebaertacres/"
+                     "_stage":  "No response yet"
                  },
                  {
                      "Name":  "Halle Cooley",
                      "URL - IG":  "https://www.instagram.com/hallejolene/",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "237K",
                      "Followers - TT":  "238K",
                      "Niche":  "Western, horse, fashion",
-                     "Notes":  ""
+                     "_stage":  "Expressed Interest"
                  },
                  {
                      "Name":  "dear.figg",
-                     "URL - IG":  "",
+                     "URL - IG":  "https://www.instagram.com/dear.fig",
                      "URL - TT":  "https://www.tiktok.com/@dear.figg",
-                     "Followes - IG":  "",
+                     "Followes - IG":  "1.4M",
                      "Followers - TT":  "1.9M",
                      "Niche":  "Pet content",
-                     "Notes":  "She has 8 animals. \"Pets are the new kids\""
+                     "_stage":  "Expressed Interest"
                  },
                  {
                      "Name":  "NoodleYorkCity",
@@ -109,43 +113,52 @@
                      "Followes - IG":  "6.6K",
                      "Followers - TT":  "37.6K",
                      "Niche":  "Dog mom in nyc",
-                     "Notes":  ""
+                     "_stage":  "Expressed Interest"
                  },
                  {
                      "Name":  "Nathan Eddy",
                      "URL - IG":  "https://www.instagram.com/roamwithauss/",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "25.4K",
                      "Followers - TT":  "",
                      "Niche":  "Outdoor adventures, dogs, travel",
-                     "Notes":  "Toyota partner, more cinematic content"
+                     "_stage":  "No response yet"
                  },
                  {
                      "Name":  "Blake Swingle",
                      "URL - IG":  "https://www.instagram.com/blakejswingle",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "10.5K",
                      "Followers - TT":  "",
                      "Niche":  "Travel, photography, dirtbike/motorcycle",
-                     "Notes":  ""
+                     "_stage":  "Expressed Interest"
                  },
                  {
                      "Name":  "Caziah Franklin",
                      "URL - IG":  "https://www.instagram.com/caziahfranklin/",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "130K",
                      "Followers - TT":  "",
                      "Niche":  "Outdoor adventures, camping, offroading",
-                     "Notes":  "Ford ambassador, his wife is pregnant, could also be good for NAP"
+                     "_stage":  "No response yet"
                  },
                  {
                      "Name":  "Carson Pottenger",
                      "URL - IG":  "https://www.instagram.com/carson.pottenger",
-                     "URL - TT":  "",
+                     "URL - TT":  "`",
                      "Followes - IG":  "70.2K",
                      "Followers - TT":  "",
                      "Niche":  "Religious, yellow lab, country lifestyle",
-                     "Notes":  ""
+                     "_stage":  "No response yet"
+                 },
+                 {
+                     "Name":  "Alex Ford Hamilton",
+                     "URL - IG":  "https://www.instagram.com/alexandr_ford/?hl=en",
+                     "URL - TT":  "https://www.tiktok.com/@alexandra_fordham",
+                     "Followes - IG":  "202K",
+                     "Followers - TT":  "44K",
+                     "Niche":  "Vintage motorcycle, car camping, overlanding",
+                     "_stage":  "No response yet"
                  }
              ]
 }
